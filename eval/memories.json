@@ -1,0 +1,14 @@
+[
+ {"id":"m01","note":"FICTIONAL sample, written for testing","text":"My great-aunt Rosalía raised chickens behind her house in Oaxaca. Every Sunday she made mole negro and would not let anyone help stir it. She hummed while she cooked but I never learned the song.","gold":["chicken","mole negro","hum"]},
+ {"id":"m02","note":"FICTIONAL sample","text":"Grandpa Teodoro fixed radios for the whole street. He always said 'Everything broken just needs patience.' He drank his coffee with too much sugar.","gold":["radio","patience","coffee"]},
+ {"id":"m03","note":"FICTIONAL sample","text":"My friend Dani loved skateboarding and terrible puns. We used to split a bag of Takis after school. I don't remember what music she liked.","gold":["skateboard","pun","takis"]},
+ {"id":"m04","note":"FICTIONAL sample","text":"Abuela Carmen sang 'Cielito Lindo' every time it rained. She kept a tin of buttons from every coat she ever owned.","gold":["cielito lindo","button"]},
+ {"id":"m05","note":"FICTIONAL sample","text":"Uncle Beto was a bus driver for thirty years. He knew every passenger's name. He liked tamales, I think the green ones, but maybe that was my mom.","gold":["bus driver","passenger","tamale"]},
+ {"id":"m06","note":"FICTIONAL sample","text":"My neighbor Mrs. Okafor grew tomatoes on her balcony and gave them to everyone. She called me 'little professor' because I always carried books.","gold":["tomato","little professor"]},
+ {"id":"m07","note":"FICTIONAL sample","text":"Tío Ernesto played dominoes at the plaza every evening and never lost gracefully. He wore the same brown hat for years.","gold":["domino","hat"]},
+ {"id":"m08","note":"FICTIONAL sample","text":"My grandmother Lucía made pan de muerto with orange zest. She told the story of crossing the river with my mother on her back.","gold":["pan de muerto","orange","river"]},
+ {"id":"m09","note":"FICTIONAL sample","text":"Our dog Pepita waited by the door every day at five. She stole socks.","gold":["door","sock"]},
+ {"id":"m10","note":"FICTIONAL sample","text":"Grandpa Hiro taught me chess on a board with one missing knight, replaced by a bottle cap. He liked jazz, but I can't remember which records.","gold":["chess","bottle cap","jazz"]},
+ {"id":"m11","note":"FICTIONAL sample","text":"Mamá Inés wrote letters to everyone in green ink. She loved marigolds and planted them every October.","gold":["green ink","marigold"]},
+ {"id":"m12","note":"FICTIONAL sample","text":"My cousin Javi fixed bikes and made the best chilaquiles. He laughed so loud the neighbors complained.","gold":["bike","chilaquiles","laugh"]}
+]

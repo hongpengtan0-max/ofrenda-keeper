@@ -1,0 +1,37 @@
+m01 guarded details 5 fabricated 0 recall 1.00 ms 16882
+m02 guarded details 4 fabricated 0 recall 1.00 ms 11398
+m03 guarded details 4 fabricated 0 recall 1.00 ms 11291
+m04 guarded details 5 fabricated 0 recall 1.00 ms 13851
+m05 guarded details 5 fabricated 0 recall 0.67 ms 19530
+m06 guarded details 4 fabricated 0 recall 0.50 ms 13230
+m07 guarded details 4 fabricated 0 recall 1.00 ms 11017
+m08 guarded details 5 fabricated 0 recall 1.00 ms 12430
+m09 guarded details 4 fabricated 0 recall 1.00 ms 9354
+m10 guarded details 5 fabricated 0 recall 0.67 ms 17948
+m11 guarded details 5 fabricated 0 recall 1.00 ms 16178
+m12 guarded details 4 fabricated 0 recall 0.67 ms 11421
+{
+  "model": "gemma3:4b",
+  "date": "2026-10-28T07:27:21.786Z",
+  "naive": {
+    "cards": 0,
+    "details": 0,
+    "fabricated": 0,
+    "fabricated_pct": null,
+    "cards_with_fabrication": 0,
+    "gold_recall_pct": null,
+    "avg_questions": null,
+    "avg_seconds": null
+  },
+  "guarded": {
+    "cards": 12,
+    "details": 54,
+    "fabricated": 0,
+    "fabricated_pct": 0,
+    "cards_with_fabrication": 0,
+    "gold_recall_pct": 87.5,
+    "avg_questions": 4.9,
+    "avg_seconds": 13.7
+  },
+  "proposed_then_rejected_by_verifier": 14
+}

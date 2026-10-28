@@ -1,0 +1,50 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Ofrenda Keeper</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+:root{--marigold:#f59e0b;--deep:#1c1028;--paper:#fff8ec;--rose:#be185d}
+*{box-sizing:border-box}body{margin:0;font-family:Georgia,serif;background:radial-gradient(circle at 50% 0,#3b1d4a,var(--deep));color:#f8e9d2;min-height:100vh}
+header{text-align:center;padding:18px 10px 4px}h1{margin:0;font-size:30px;color:var(--marigold);letter-spacing:1px}header p{margin:4px 0;opacity:.8;font-size:14px}
+main{display:grid;grid-template-columns:1fr 1.1fr;gap:22px;max-width:1180px;margin:0 auto;padding:14px 20px 30px}
+.panel{background:rgba(255,255,255,.06);border:1px solid rgba(245,158,11,.3);border-radius:14px;padding:16px}
+#log{height:300px;overflow:auto;font-size:15px;line-height:1.45}.you{color:#fde68a;margin:8px 0}.keeper{color:#e9d5ff;margin:8px 0 14px;font-style:italic}
+textarea{width:100%;height:96px;border-radius:10px;border:1px solid #a16207;background:#140b1d;color:#fff;padding:10px;font:15px Georgia}
+button{background:var(--marigold);color:#1c1028;border:0;border-radius:999px;padding:10px 18px;font-weight:bold;cursor:pointer;margin-top:8px;font-family:Georgia}
+button.ghost{background:transparent;color:var(--marigold);border:1px solid var(--marigold)}
+#qs li{margin:6px 0;cursor:pointer;color:#fde68a}#qs li:hover{text-decoration:underline}
+.card{background:var(--paper);color:#3b1d1d;border-radius:16px;padding:26px 28px;position:relative;border:10px solid transparent;
+ background-image:linear-gradient(var(--paper),var(--paper)),repeating-linear-gradient(45deg,#f59e0b 0 12px,#ea580c 12px 24px,#be185d 24px 36px);background-origin:border-box;background-clip:padding-box,border-box;min-height:430px}
+.card h2{text-align:center;margin:4px 0 0;font-size:34px;color:#7c2d12}.card .rel{text-align:center;font-style:italic;color:#9a3412;margin-bottom:12px}
+.candles{text-align:center;font-size:26px}.sec{margin:10px 0}.sec b{display:block;color:#be185d;font-size:13px;text-transform:uppercase;letter-spacing:1px}
+.chip{display:inline-block;background:#fde68a;border-radius:999px;padding:3px 10px;margin:3px 4px 0 0;font-size:14px;cursor:help}
+.empty{color:#a8a29e;font-style:italic;font-size:14px}.foot{font-size:12px;color:#78716c;text-align:center;margin-top:14px}
+#naive{display:none;margin-top:14px;background:#2a1520;border:1px dashed #f87171;border-radius:12px;padding:12px;font-size:13px;color:#fecaca}
+.spin{opacity:.6}.badge{font-size:12px;background:#14532d;color:#bbf7d0;border-radius:6px;padding:2px 6px}
+</style></head><body>
+<header><h1>🕯️ Ofrenda Keeper 🌼</h1><p>Tell me about someone you miss. I will only write down what <i>you</i> said, and ask about the rest.</p>
+<p><span class="badge" id="model">local</span> runs offline on Gemma via Ollama · nothing leaves this machine</p></header>
+<main>
+<section class="panel"><div id="log"></div>
+<textarea id="in" placeholder="e.g. My grandmother made pan de muerto with orange zest..."></textarea>
+<button id="send">Remember this</button> <button class="ghost" id="cmp">What would an unguarded AI write?</button>
+<h3 style="color:#fbbf24;font-size:16px;margin:16px 0 4px">I'd like to ask you</h3><ul id="qs"><li class="empty">Questions appear here.</li></ul>
+<div id="naive"></div></section>
+<section><div class="card" id="card"><div class="candles">🕯️ 🌼 🕯️</div><h2 id="c-name">…</h2><div class="rel" id="c-rel"></div><div id="c-body"><p class="empty" style="text-align:center">The card fills in as you share memories.</p></div>
+<div class="foot">Every detail on this card is quoted from your own words. Hover a detail to see the quote.</div></div></section>
+</main>
+<script>
+const thread='t'+Date.now();const $=id=>document.getElementById(id);
+fetch('/api/info').then(r=>r.json()).then(i=>$('model').textContent='model: '+i.model);
+const LABEL={favorite_foods:'For the altar table',songs:'Songs',sayings:'Things they always said',stories:'Remembered',altar_items:'Objects'};
+function esc(s){return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
+function render(d){const c=d.card;$('c-name').textContent=c.name||'(name not given yet)';$('c-rel').textContent=[c.relationship,c.years].filter(Boolean).join(' · ');
+ const ev=c._evidence||{};let h='';for(const k in LABEL){const v=c[k]||[];h+=`<div class="sec"><b>${LABEL[k]}</b>${v.length?v.map(x=>`<span class="chip" title="you said: “${esc(ev[x]||x)}”">${esc(x)}</span>`).join(''):'<span class="empty">not shared yet</span>'}</div>`}
+ $('c-body').innerHTML=h;$('qs').innerHTML=(d.questions||[]).map(q=>`<li>${esc(q)}</li>`).join('')||'<li class="empty">Nothing to ask.</li>';
+ document.querySelectorAll('#qs li').forEach(li=>li.onclick=()=>{$('in').focus();$('in').placeholder=li.textContent})}
+$('send').onclick=async()=>{const t=$('in').value.trim();if(!t)return;$('log').innerHTML+=`<div class="you">You: ${esc(t)}</div>`;$('in').value='';$('send').textContent='Listening…';$('card').classList.add('spin');
+ const d=await (await fetch('/api/remember',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({thread,text:t})})).json();
+ $('card').classList.remove('spin');$('send').textContent='Remember this';if(d.error){$('log').innerHTML+=`<div class="keeper">Error: ${esc(d.error)}</div>`;return}
+ $('log').innerHTML+=`<div class="keeper">Keeper: ${esc(d.reply)}</div>`;$('log').scrollTop=1e9;render(d)};
+$('cmp').onclick=async()=>{$('naive').style.display='block';$('naive').textContent='Asking the same model with a plain "fill every field" prompt…';
+ const d=await (await fetch('/api/naive?thread='+thread)).json();const c=d.card||{};
+ $('naive').innerHTML='<b>Unguarded prompt, same model (for comparison only, not saved):</b><br>'+['relationship','years','songs','altar_items'].map(k=>`<div><i>${k}:</i> ${esc([].concat(c[k]||'').join('; '))}</div>`).join('')};
+</script></body></html>

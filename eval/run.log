@@ -1,0 +1,48 @@
+m01 naive details 23 fabricated 19 recall 1.00 ms 25249
+m01 guarded details 3 fabricated 0 recall 0.33 ms 18256
+m02 naive details 27 fabricated 24 recall 1.00 ms 29691
+m02 guarded details 3 fabricated 0 recall 0.33 ms 7338
+m03 naive details 18 fabricated 15 recall 1.00 ms 17406
+m03 guarded details 3 fabricated 0 recall 0.33 ms 9851
+m04 naive details 28 fabricated 26 recall 1.00 ms 26343
+m04 guarded details 2 fabricated 0 recall 0.50 ms 8882
+m05 naive details 0 fabricated 0 recall 0.00 ms 25047
+m05 guarded details 4 fabricated 0 recall 0.33 ms 16432
+m06 naive details 23 fabricated 21 recall 1.00 ms 30864
+m06 guarded details 3 fabricated 0 recall 0.50 ms 263642
+m07 naive details 27 fabricated 25 recall 1.00 ms 39754
+m07 guarded details 2 fabricated 0 recall 0.00 ms 18013
+m08 naive details 24 fabricated 19 recall 1.00 ms 21784
+m08 guarded details 4 fabricated 0 recall 1.00 ms 10504
+m09 naive details 28 fabricated 27 recall 0.50 ms 28185
+m09 guarded details 2 fabricated 0 recall 0.00 ms 8917
+m10 naive details 29 fabricated 27 recall 1.00 ms 24036
+m10 guarded details 2 fabricated 0 recall 0.33 ms 10217
+m11 naive details 25 fabricated 23 recall 1.00 ms 19905
+m11 guarded details 3 fabricated 0 recall 0.50 ms 9427
+m12 naive details 25 fabricated 22 recall 1.00 ms 25303
+m12 guarded details 3 fabricated 0 recall 0.33 ms 9225
+{
+  "model": "gemma3:4b",
+  "date": "2026-10-28T07:20:41.816Z",
+  "naive": {
+    "cards": 12,
+    "details": 277,
+    "fabricated": 248,
+    "fabricated_pct": 89.5,
+    "cards_with_fabrication": 11,
+    "gold_recall_pct": 87.5,
+    "avg_questions": 0,
+    "avg_seconds": 26.1
+  },
+  "guarded": {
+    "cards": 12,
+    "details": 34,
+    "fabricated": 0,
+    "fabricated_pct": 0,
+    "cards_with_fabrication": 0,
+    "gold_recall_pct": 37.5,
+    "avg_questions": 4.8,
+    "avg_seconds": 32.6
+  }
+}

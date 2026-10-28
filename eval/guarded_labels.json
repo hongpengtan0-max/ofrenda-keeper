@@ -1,0 +1,6 @@
+{"rubric":"Hand audit of every detail in results_v3_guarded.json (final pipeline) and every verifier rejection. Same labels as naive_labels.json, plus M = misattributed (words are from the memory but attached to the wrong person).",
+ "details_total":61,"grounded":59,"invented":0,"embellished":0,
+ "misattributed":[{"id":"m06","value":"carried books","why":"the narrator carried books, not Mrs. Okafor"},{"id":"m08","value":"crossing the river with her mother on her back","why":"source says Lucía carried the narrator's mother (her daughter)"}],
+ "rejections_total":7,
+ "rejections_correct":[{"id":"m04","value":"loved one"},{"id":"m11","value":"loved one"},{"id":"m05","value":"tamales (green)","why":"person said 'I think... maybe that was my mom'"},{"id":"m05","value":"tamales"}],
+ "rejections_overstrict":[{"id":"m10","value":"teaching chess","why":"true, but paraphrased 'taught' as 'teaching'"},{"id":"m10","value":"jazz","why":"'He liked jazz' was certain; only the records were unsure"},{"id":"m10","value":"jazz records"}]}

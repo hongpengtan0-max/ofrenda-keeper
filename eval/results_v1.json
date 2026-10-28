@@ -1,0 +1,2265 @@
+{
+  "summary": {
+    "model": "gemma3:4b",
+    "date": "2026-10-28T07:20:41.816Z",
+    "naive": {
+      "cards": 12,
+      "details": 277,
+      "fabricated": 248,
+      "fabricated_pct": 89.5,
+      "cards_with_fabrication": 11,
+      "gold_recall_pct": 87.5,
+      "avg_questions": 0,
+      "avg_seconds": 26.1
+    },
+    "guarded": {
+      "cards": 12,
+      "details": 34,
+      "fabricated": 0,
+      "fabricated_pct": 0,
+      "cards_with_fabrication": 0,
+      "gold_recall_pct": 37.5,
+      "avg_questions": 4.8,
+      "avg_seconds": 32.6
+    }
+  },
+  "runs": [
+    {
+      "id": "m01",
+      "mode": "naive",
+      "ms": 25249,
+      "details": [
+        {
+          "field": "name",
+          "value": "Rosalía",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "relationship",
+          "value": "Great-Aunt",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "years",
+          "value": "Unknown (valued deeply)",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "favorite_foods",
+          "value": "Mole Negro",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "favorite_foods",
+          "value": "Traditional Oaxacan cuisine",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "songs",
+          "value": "Unknown song she hummed while cooking",
+          "support": 0.6,
+          "fabricated": true
+        },
+        {
+          "field": "songs",
+          "value": "Traditional Oaxacan folk music",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "sayings",
+          "value": "‘Let no one help stir it,’ (referring to the mole negro)",
+          "support": 0.63,
+          "fabricated": true
+        },
+        {
+          "field": "sayings",
+          "value": "‘A little bit of love goes a long way’ (implied by her generosity and care)",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "stories",
+          "value": "Rosalía raised chickens behind her house in Oaxaca.",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "stories",
+          "value": "Every Sunday, she made mole negro, a dish she guarded fiercely.",
+          "support": 0.57,
+          "fabricated": true
+        },
+        {
+          "field": "stories",
+          "value": "She hummed while she cooked, a melody lost to time.",
+          "support": 0.5,
+          "fabricated": true
+        },
+        {
+          "field": "stories",
+          "value": "Her dedication to her traditions and family was unwavering.",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "Small ceramic chicken figurines",
+          "support": 0.25,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "A miniature clay pot for mole negro",
+          "support": 0.4,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "A vibrant red ribbon (representing life and remembrance)",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "A small, hand-painted Oaxacan pottery plate",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "A photograph of Rosalía (if available)",
+          "support": 0.25,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "Cinnamon sticks and dried chiles (ingredients for mole negro)",
+          "support": 0.29,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "A small, hand-embroidered sarape fragment (Oaxacan textile)",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "A glass of mezcal (a traditional Oaxacan spirit)",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "Candles (white and orange)",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "Marigolds (cempasúchil) – vibrant orange and yellow flowers",
+          "support": 0,
+          "fabricated": true
+        }
+      ],
+      "fabricated": 19,
+      "recall": 1,
+      "questions": [],
+      "rejected": [],
+      "raw": "```json\n{\n  \"name\": \"Rosalía\",\n  \"relationship\": \"Great-Aunt\",\n  \"years\": \"Unknown (valued deeply)\",\n  \"favorite_foods\": [\n    \"Mole Negro\",\n    \"Traditional Oaxacan cuisine\"\n  ],\n  \"songs\": [\n    \"Unknown song she hummed while cooking\",\n    \"Traditional Oaxacan folk music\"\n  ],\n  \"sayings\": [\n    \"‘Let no one help stir it,’ (referring to the mole negro)\",\n    \"‘A little bit of love goes a long way’ (implied by her generosity and care)\"\n  ],\n  \"stories\": [\n    \"Rosalía raised chickens behind her house in Oaxaca.\",\n    \"Every Sunday, she made mole negro, a dish she guarded fiercely.\",\n    \"She hummed while she cooked, a melody lost to time.\",\n    \"Her dedication to her traditions and family was unwavering.\"\n  ],\n  \"altar_items\": [\n    \"Small ceramic chicken figurines\",\n    \"A miniature clay pot for mole negro\",\n    \"A vibrant red ribbon (representing life and remembrance)\",\n    \"A small, hand-painted Oaxacan pottery plate\",\n    \"A photograph of Rosalía (if available)\",\n    \"Cinnamon sticks and dried chiles (ingredients for mole negro)\",\n    \"A small, hand-embroidered sarape fragment (Oaxacan textile)\",\n    \"A glass of mezcal (a traditional Oaxacan spirit)\",\n    \"Candles (white and orange)\",\n    \"Marigolds (cempasúchil) – vibrant orange and yellow flowers\"\n  ]\n}\n```"
+    },
+    {
+      "id": "m01",
+      "mode": "guarded",
+      "ms": 18256,
+      "details": [
+        {
+          "field": "name",
+          "value": "Rosalía",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "relationship",
+          "value": "great-aunt",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "favorite_foods",
+          "value": "mole negro",
+          "support": 1,
+          "fabricated": false
+        }
+      ],
+      "fabricated": 0,
+      "recall": 0.3333333333333333,
+      "questions": [
+        "I wasn't sure about \"did not learn the song\" (songs). Did I get that right, or can you tell me in your words?",
+        "Do you remember the years Rosalía was born and passed? It is fine to leave this blank.",
+        "Was there a song Rosalía loved or sang?",
+        "Was there something Rosalía always used to say?",
+        "Is there a moment with Rosalía you want the card to remember?"
+      ],
+      "rejected": [
+        {
+          "field": "songs",
+          "value": "did not learn the song",
+          "quote": "I never learned the song",
+          "reason": "value goes beyond the quote"
+        }
+      ],
+      "raw": "```json\n{\n  \"name\": \"Rosalía\",\n  \"facts\": [\n    {\n      \"field\": \"relationship\",\n      \"value\": \"great-aunt\",\n      \"quote\": \"My great-aunt Rosalía\"\n    },\n    {\n      \"field\": \"activities\",\n      \"value\": \"raised chickens\",\n      \"quote\": \"raised chickens behind her house\"\n    },\n    {\n      \"field\": \"favorite_foods\",\n      \"value\": \"mole negro\",\n      \"quote\": \"she made mole negro\"\n    },\n    {\n      \"field\": \"activities\",\n      \"value\": \"hummed while she cooked\",\n      \"quote\": \"hummed while she cooked\"\n    },\n    {\n      \"field\": \"songs\",\n      \"value\": \"did not learn the song\",\n      \"quote\": \"I never learned the song\"\n    }\n  ],\n  \"unsure\": [\n    \"Location: Oaxaca\",\n    \"Time period: Not specified\"\n  ]\n}\n```"
+    },
+    {
+      "id": "m02",
+      "mode": "naive",
+      "ms": 29691,
+      "details": [
+        {
+          "field": "name",
+          "value": "Teodoro",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "relationship",
+          "value": "Grandfather",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "years",
+          "value": "Throughout my life",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "favorite_foods",
+          "value": "Coffee (with lots of sugar)",
+          "support": 0.67,
+          "fabricated": true
+        },
+        {
+          "field": "favorite_foods",
+          "value": "Pan de Muerto",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "favorite_foods",
+          "value": "Tamales",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "songs",
+          "value": "Traditional Mexican Rancheras",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "songs",
+          "value": "Boleros",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "songs",
+          "value": "Anything with a warm, comforting melody",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "sayings",
+          "value": "‘Everything broken just needs patience.’",
+          "support": 0.83,
+          "fabricated": false
+        },
+        {
+          "field": "sayings",
+          "value": "‘A little bit of kindness goes a long way.’",
+          "support": 0.14,
+          "fabricated": true
+        },
+        {
+          "field": "sayings",
+          "value": "‘Don’t rush, enjoy the moment.’",
+          "support": 0.2,
+          "fabricated": true
+        },
+        {
+          "field": "stories",
+          "value": "He fixed radios for everyone on the street, always with a smile.",
+          "support": 0.6,
+          "fabricated": true
+        },
+        {
+          "field": "stories",
+          "value": "He’d spend hours perfecting his coffee, adding an excessive amount of sugar.",
+          "support": 0.22,
+          "fabricated": true
+        },
+        {
+          "field": "stories",
+          "value": "He always had time for a story, even if it was just about a broken radio.",
+          "support": 0.38,
+          "fabricated": true
+        },
+        {
+          "field": "stories",
+          "value": "His hands were always busy, fixing, building, and caring.",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "stories",
+          "value": "He taught me the importance of perseverance and a gentle heart.",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "A small, working radio (or a picture of one)",
+          "support": 0.25,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "A mug filled with coffee (or a representation of coffee)",
+          "support": 0.4,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "A generous portion of Pan de Muerto",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "A plate of tamales",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "A photograph of Teodoro smiling",
+          "support": 0.33,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "A small, handcrafted wooden tool (representing his fixing skills)",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "Marigolds (cempasúchil)",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "Candles",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "Sugar skulls",
+          "support": 0.5,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "A small, comfortable chair for him to rest in peacefully",
+          "support": 0,
+          "fabricated": true
+        }
+      ],
+      "fabricated": 24,
+      "recall": 1,
+      "questions": [],
+      "rejected": [],
+      "raw": "```json\n{\n  \"name\": \"Teodoro\",\n  \"relationship\": \"Grandfather\",\n  \"years\": \"Throughout my life\",\n  \"favorite_foods\": [\n    \"Coffee (with lots of sugar)\",\n    \"Pan de Muerto\",\n    \"Tamales\"\n  ],\n  \"songs\": [\n    \"Traditional Mexican Rancheras\",\n    \"Boleros\",\n    \"Anything with a warm, comforting melody\"\n  ],\n  \"sayings\": [\n    \"‘Everything broken just needs patience.’\",\n    \"‘A little bit of kindness goes a long way.’\",\n    \"‘Don’t rush, enjoy the moment.’\"\n  ],\n  \"stories\": [\n    \"He fixed radios for everyone on the street, always with a smile.\",\n    \"He’d spend hours perfecting his coffee, adding an excessive amount of sugar.\",\n    \"He always had time for a story, even if it was just about a broken radio.\",\n    \"His hands were always busy, fixing, building, and caring.\",\n    \"He taught me the importance of perseverance and a gentle heart.\"\n  ],\n  \"altar_items\": [\n    \"A small, working radio (or a picture of one)\",\n    \"A mug filled with coffee (or a representation of coffee)\",\n    \"A generous portion of Pan de Muerto\",\n    \"A plate of tamales\",\n    \"A photograph of Teodoro smiling\",\n    \"A small, handcrafted wooden tool (representing his fixing skills)\",\n    \"Marigolds (cempasúchil)\",\n    \"Candles\",\n    \"Sugar skulls\",\n    \"A small, comfortable chair for him to rest in peacefully\"\n  ]\n}\n```"
+    },
+    {
+      "id": "m02",
+      "mode": "guarded",
+      "ms": 7338,
+      "details": [
+        {
+          "field": "name",
+          "value": "Teodoro",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "favorite_foods",
+          "value": "too much sugar",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "sayings",
+          "value": "Everything broken just needs patience.",
+          "support": 0.8,
+          "fabricated": false
+        }
+      ],
+      "fabricated": 0,
+      "recall": 0.3333333333333333,
+      "questions": [
+        "How were you related to Teodoro?",
+        "Do you remember the years Teodoro was born and passed? It is fine to leave this blank.",
+        "Was there a song Teodoro loved or sang?",
+        "Is there a moment with Teodoro you want the card to remember?",
+        "Is there an object that reminds you of Teodoro?"
+      ],
+      "rejected": [],
+      "raw": "```json\n{\n  \"name\": \"Teodoro\",\n  \"facts\": [\n    {\n      \"field\": \"sayings\",\n      \"value\": \"Everything broken just needs patience.\",\n      \"quote\": \"Everything broken just needs patience.\"\n    },\n    {\n      \"field\": \"favorite_foods\",\n      \"value\": \"too much sugar\",\n      \"quote\": \"drank his coffee with too much sugar\"\n    }\n  ],\n  \"unsure\": []\n}\n```"
+    },
+    {
+      "id": "m03",
+      "mode": "naive",
+      "ms": 17406,
+      "details": [
+        {
+          "field": "name",
+          "value": "Dani",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "relationship",
+          "value": "Friend",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "years",
+          "value": "Not Specified",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "favorite_foods",
+          "value": "Takis",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "sayings",
+          "value": "May your wheels always roll smooth.",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "sayings",
+          "value": "Keep punning!",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "sayings",
+          "value": "Rest in peace, beautiful soul.",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "stories",
+          "value": "Dani loved skateboarding and always pushed her limits.",
+          "support": 0.5,
+          "fabricated": true
+        },
+        {
+          "field": "stories",
+          "value": "We shared a bag of Takis after school, a simple joy we always cherished.",
+          "support": 0.6,
+          "fabricated": true
+        },
+        {
+          "field": "stories",
+          "value": "She had a knack for terrible puns that always made us laugh.",
+          "support": 0.33,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "Skateboard (miniature or representation)",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "Bag of Takis (empty or a small packet)",
+          "support": 0.4,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "Colorful marigolds (cempasúchil)",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "Candles (white and orange)",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "Sugar skull (calavera)",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "Photo of Dani",
+          "support": 0.5,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "Small trinkets representing her personality (e.g., a silly toy, a colorful bead)",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "Papel picado (colorful paper banners)",
+          "support": 0,
+          "fabricated": true
+        }
+      ],
+      "fabricated": 15,
+      "recall": 1,
+      "questions": [],
+      "rejected": [],
+      "raw": "```json\n{\n  \"name\": \"Dani\",\n  \"relationship\": \"Friend\",\n  \"years\": \"Not Specified\",\n  \"favorite_foods\": [\"Takis\"],\n  \"songs\": [],\n  \"sayings\": [\"May your wheels always roll smooth.\", \"Keep punning!\", \"Rest in peace, beautiful soul.\"],\n  \"stories\": [\n    \"Dani loved skateboarding and always pushed her limits.\",\n    \"We shared a bag of Takis after school, a simple joy we always cherished.\",\n    \"She had a knack for terrible puns that always made us laugh.\"\n  ],\n  \"altar_items\": [\n    \"Skateboard (miniature or representation)\",\n    \"Bag of Takis (empty or a small packet)\",\n    \"Colorful marigolds (cempasúchil)\",\n    \"Candles (white and orange)\",\n    \"Sugar skull (calavera)\",\n    \"Photo of Dani\",\n    \"Small trinkets representing her personality (e.g., a silly toy, a colorful bead)\",\n    \"Papel picado (colorful paper banners)\"\n  ]\n}\n```"
+    },
+    {
+      "id": "m03",
+      "mode": "guarded",
+      "ms": 9851,
+      "details": [
+        {
+          "field": "name",
+          "value": "Dani",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "relationship",
+          "value": "friend",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "favorite_foods",
+          "value": "Takis",
+          "support": 1,
+          "fabricated": false
+        }
+      ],
+      "fabricated": 0,
+      "recall": 0.3333333333333333,
+      "questions": [
+        "Do you remember the years Dani was born and passed? It is fine to leave this blank.",
+        "Was there a song Dani loved or sang?",
+        "Was there something Dani always used to say?",
+        "Is there a moment with Dani you want the card to remember?",
+        "Is there an object that reminds you of Dani?"
+      ],
+      "rejected": [],
+      "raw": "```json\n{\n  \"name\": \"Dani\",\n  \"facts\": [\n    {\n      \"field\": \"relationship\",\n      \"value\": \"friend\",\n      \"quote\": \"My friend Dani\"\n    },\n    {\n      \"field\": \"favorite_foods\",\n      \"value\": \"Takis\",\n      \"quote\": \"We used to split a bag of Takis\"\n    }\n  ],\n  \"unsure\": [\n    \"what music she liked\"\n  ]\n}\n```"
+    },
+    {
+      "id": "m04",
+      "mode": "naive",
+      "ms": 26343,
+      "details": [
+        {
+          "field": "name",
+          "value": "Carmen",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "relationship",
+          "value": "Grandmother",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "years",
+          "value": "Lifetime",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "favorite_foods",
+          "value": "Tamales",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "favorite_foods",
+          "value": "Pan de Muerto",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "favorite_foods",
+          "value": "Arroz con Leche",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "favorite_foods",
+          "value": "Champurrado",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "songs",
+          "value": "Cielito Lindo",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "songs",
+          "value": "Las Mañanitas",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "songs",
+          "value": "Volver, Volver",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "sayings",
+          "value": "Siempre en mi corazón.",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "sayings",
+          "value": "Que descanses en paz.",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "sayings",
+          "value": "Recuerdos que nunca se borran.",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "sayings",
+          "value": "Con amor y cariño.",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "stories",
+          "value": "Abuela Carmen sang 'Cielito Lindo' every time it rained, filling the house with joy.",
+          "support": 0.7,
+          "fabricated": true
+        },
+        {
+          "field": "stories",
+          "value": "She meticulously collected buttons from every coat she ever owned, a beautiful testament to her life.",
+          "support": 0.44,
+          "fabricated": true
+        },
+        {
+          "field": "stories",
+          "value": "Her warmth and kindness were a constant comfort to everyone who knew her.",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "stories",
+          "value": "She always had a smile and a story to tell.",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "A framed photograph of Abuela Carmen smiling.",
+          "support": 0.4,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "A small tin filled with colorful buttons, representing her collection.",
+          "support": 0.29,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "A plate of Pan de Muerto, freshly baked.",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "A glass of Arroz con Leche.",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "A miniature rain cloud made of cotton, symbolizing her love for 'Cielito Lindo'.",
+          "support": 0.25,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "A small, hand-painted ceramic angel.",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "Candles (yellow and orange) to guide her spirit.",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "Marigolds (cempasúchil) – vibrant orange and yellow flowers.",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "Papel picado – colorful paper banners.",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "A small, hand-written card with the saying 'Siempre en mi corazón.'",
+          "support": 0,
+          "fabricated": true
+        }
+      ],
+      "fabricated": 26,
+      "recall": 1,
+      "questions": [],
+      "rejected": [],
+      "raw": "```json\n{\n  \"name\": \"Carmen\",\n  \"relationship\": \"Grandmother\",\n  \"years\": \"Lifetime\",\n  \"favorite_foods\": [\n    \"Tamales\",\n    \"Pan de Muerto\",\n    \"Arroz con Leche\",\n    \"Champurrado\"\n  ],\n  \"songs\": [\n    \"Cielito Lindo\",\n    \"Las Mañanitas\",\n    \"Volver, Volver\"\n  ],\n  \"sayings\": [\n    \"Siempre en mi corazón.\",\n    \"Que descanses en paz.\",\n    \"Recuerdos que nunca se borran.\",\n    \"Con amor y cariño.\"\n  ],\n  \"stories\": [\n    \"Abuela Carmen sang 'Cielito Lindo' every time it rained, filling the house with joy.\",\n    \"She meticulously collected buttons from every coat she ever owned, a beautiful testament to her life.\",\n    \"Her warmth and kindness were a constant comfort to everyone who knew her.\",\n    \"She always had a smile and a story to tell.\"\n  ],\n  \"altar_items\": [\n    \"A framed photograph of Abuela Carmen smiling.\",\n    \"A small tin filled with colorful buttons, representing her collection.\",\n    \"A plate of Pan de Muerto, freshly baked.\",\n    \"A glass of Arroz con Leche.\",\n    \"A miniature rain cloud made of cotton, symbolizing her love for 'Cielito Lindo'.\",\n    \"A small, hand-painted ceramic angel.\",\n    \"Candles (yellow and orange) to guide her spirit.\",\n    \"Marigolds (cempasúchil) – vibrant orange and yellow flowers.\",\n    \"Papel picado – colorful paper banners.\",\n    \"A small, hand-written card with the saying 'Siempre en mi corazón.'\"\n  ]\n}\n```"
+    },
+    {
+      "id": "m04",
+      "mode": "guarded",
+      "ms": 8882,
+      "details": [
+        {
+          "field": "name",
+          "value": "Carmen",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "songs",
+          "value": "sang 'Cielito Lindo'",
+          "support": 1,
+          "fabricated": false
+        }
+      ],
+      "fabricated": 0,
+      "recall": 0.5,
+      "questions": [
+        "How were you related to Carmen?",
+        "Do you remember the years Carmen was born and passed? It is fine to leave this blank.",
+        "What food would you put on the altar for Carmen?",
+        "Was there something Carmen always used to say?",
+        "Is there a moment with Carmen you want the card to remember?"
+      ],
+      "rejected": [],
+      "raw": "```json\n{\n  \"name\": \"Carmen\",\n  \"facts\": [\n    {\n      \"field\": \"songs\",\n      \"value\": \"sang 'Cielito Lindo'\",\n      \"quote\": \"sang 'Cielito Lindo'\"\n    },\n    {\n      \"field\": \"habits\",\n      \"value\": \"kept a tin of buttons from every coat she ever owned\",\n      \"quote\": \"kept a tin of buttons from every coat she ever owned\"\n    }\n  ],\n  \"unsure\": []\n}\n```"
+    },
+    {
+      "id": "m05",
+      "mode": "naive",
+      "ms": 25047,
+      "details": [],
+      "fabricated": 0,
+      "recall": 0,
+      "questions": [],
+      "rejected": [],
+      "raw": "```json\n{\n  \"name\": \"Uncle Beto\",\n  \"relationship\": \"Uncle\",\n  \"years\": \"30 years\",\n  \"favorite_foods\": [\n    \"Tamales (likely green)\"\n  ],\n  \"songs\": [\n    \"Traditional Mexican folk music\",\n    \"Songs he listened to while driving the bus\"\n  ],\n  \"sayings\": [\n    \"‘I know every passenger’s name.’\",\n    \"‘A good driver always knows the route.’\",\n    \"‘Never forget a face.’\"\n  ],\n  \"stories\": [\n    \"Uncle Beto was a bus driver for thirty years, a quiet and observant man.\",\n    \"He had a remarkable memory, remembering the names and faces of countless passengers.\",\n    \"He always had a kind word and a steady hand at the wheel.\",\n    \"He loved tamales, particularly the green ones – a cherished comfort food.\",\n    \"His dedication and service touched many lives within the community.\"\n  ],\n  \"altar_items\": [\n    \"A worn bus driver’s cap\",\n    \"A small, framed photograph of Uncle Beto\",\n    \"A plate of freshly made tamales (green, if possible)\",\n    \"A small, comfortable armchair or seat representing his bus route\",\n    \"A map of the local bus routes he drove\",\n    \"A small, hand-painted sign reading ‘Conocí a muchos’ (I met many)\",\n    \"Marigolds (cempasúes)\",\n    \"Papel picado banners\",\n    \"Sugar skulls\",\n    \"Candles\",\n    \"A small, handwritten note: ‘Your memory is a beautiful route.’”\n  ]\n}\n```"
+    },
+    {
+      "id": "m05",
+      "mode": "guarded",
+      "ms": 16432,
+      "details": [
+        {
+          "field": "name",
+          "value": "Uncle Beto",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "relationship",
+          "value": "uncle",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "years",
+          "value": "thirty years",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "favorite_foods",
+          "value": "tamales (green)",
+          "support": 1,
+          "fabricated": false
+        }
+      ],
+      "fabricated": 0,
+      "recall": 0.3333333333333333,
+      "questions": [
+        "Was there a song Uncle Beto loved or sang?",
+        "Was there something Uncle Beto always used to say?",
+        "Is there a moment with Uncle Beto you want the card to remember?",
+        "Is there an object that reminds you of Uncle Beto?"
+      ],
+      "rejected": [],
+      "raw": "```json\n{\n  \"name\": \"Uncle Beto\",\n  \"facts\": [\n    {\n      \"field\": \"relationship\",\n      \"value\": \"uncle\",\n      \"quote\": \"Uncle Beto\"\n    },\n    {\n      \"field\": \"years\",\n      \"value\": \"thirty years\",\n      \"quote\": \"thirty years\"\n    },\n    {\n      \"field\": \"facts\",\n      \"value\": \"knew every passenger's name\",\n      \"quote\": \"He knew every passenger's name.\"\n    },\n    {\n      \"field\": \"favorite_foods\",\n      \"value\": \"tamales (green)\",\n      \"quote\": \"He liked tamales, I think the green ones\"\n    }\n  ],\n  \"unsure\": [\n    \"Whether the person is remembering the tamales correctly.\"\n  ]\n}\n```"
+    },
+    {
+      "id": "m06",
+      "mode": "naive",
+      "ms": 30864,
+      "details": [
+        {
+          "field": "name",
+          "value": "Mrs. Okafor",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "relationship",
+          "value": "Neighbor",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "years",
+          "value": "Not specified, but fondly remembered",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "favorite_foods",
+          "value": "Tomatoes (especially her homegrown ones)",
+          "support": 0.25,
+          "fabricated": true
+        },
+        {
+          "field": "favorite_foods",
+          "value": "Likely traditional Mexican dishes – though specific preferences are unknown",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "songs",
+          "value": "Traditional Mexican folk music – likely upbeat and joyful",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "songs",
+          "value": "Perhaps classical music, reflecting her gentle nature",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "sayings",
+          "value": "‘Little professor’ – a term of endearment and recognition of her observant nature.",
+          "support": 0.14,
+          "fabricated": true
+        },
+        {
+          "field": "sayings",
+          "value": "‘Sharing is caring’ – reflecting her generous spirit.",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "sayings",
+          "value": "‘A simple pleasure is a beautiful thing’ – acknowledging the joy she found in small acts.",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "stories",
+          "value": "Mrs. Okafor grew beautiful tomatoes on her balcony, sharing them generously with everyone.",
+          "support": 0.7,
+          "fabricated": true
+        },
+        {
+          "field": "stories",
+          "value": "She affectionately called me ‘little professor’ because I was always surrounded by books.",
+          "support": 0.67,
+          "fabricated": true
+        },
+        {
+          "field": "stories",
+          "value": "Her balcony was a vibrant splash of color and life, a testament to her nurturing spirit.",
+          "support": 0.13,
+          "fabricated": true
+        },
+        {
+          "field": "stories",
+          "value": "She always had a warm smile and a kind word for everyone she met.",
+          "support": 0.17,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "A small terracotta pot with a thriving tomato plant (real or artificial)",
+          "support": 0.13,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "A stack of well-loved books – perhaps a classic novel or a collection of poetry",
+          "support": 0.13,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "A colorful sarape or embroidered cloth",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "A small ceramic figurine of a hummingbird (representing joy and beauty)",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "Marigolds (cempasúchil) – the iconic flower of Día de los Muertos, arranged in a vibrant circle",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "Papel picado – decorative paper cutouts in bright colors",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "A small plate of fresh tomatoes (or a decorative representation of them)",
+          "support": 0.29,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "A handwritten card with the words ‘Querida Mrs. Okafor, siempre te recordaremos’ (Dear Mrs. Okafor, we will always remember you)",
+          "support": 0.25,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "A small glass of agua de jamaica (hibiscus tea) – a refreshing and traditional offering",
+          "support": 0,
+          "fabricated": true
+        }
+      ],
+      "fabricated": 21,
+      "recall": 1,
+      "questions": [],
+      "rejected": [],
+      "raw": "```json\n{\n  \"name\": \"Mrs. Okafor\",\n  \"relationship\": \"Neighbor\",\n  \"years\": \"Not specified, but fondly remembered\",\n  \"favorite_foods\": [\n    \"Tomatoes (especially her homegrown ones)\",\n    \"Likely traditional Mexican dishes – though specific preferences are unknown\"\n  ],\n  \"songs\": [\n    \"Traditional Mexican folk music – likely upbeat and joyful\",\n    \"Perhaps classical music, reflecting her gentle nature\"\n  ],\n  \"sayings\": [\n    \"‘Little professor’ – a term of endearment and recognition of her observant nature.\",\n    \"‘Sharing is caring’ – reflecting her generous spirit.\",\n    \"‘A simple pleasure is a beautiful thing’ – acknowledging the joy she found in small acts.\"\n  ],\n  \"stories\": [\n    \"Mrs. Okafor grew beautiful tomatoes on her balcony, sharing them generously with everyone.\",\n    \"She affectionately called me ‘little professor’ because I was always surrounded by books.\",\n    \"Her balcony was a vibrant splash of color and life, a testament to her nurturing spirit.\",\n    \"She always had a warm smile and a kind word for everyone she met.\"\n  ],\n  \"altar_items\": [\n    \"A small terracotta pot with a thriving tomato plant (real or artificial)\",\n    \"A stack of well-loved books – perhaps a classic novel or a collection of poetry\",\n    \"A colorful sarape or embroidered cloth\",\n    \"A small ceramic figurine of a hummingbird (representing joy and beauty)\",\n    \"Marigolds (cempasúchil) – the iconic flower of Día de los Muertos, arranged in a vibrant circle\",\n    \"Papel picado – decorative paper cutouts in bright colors\",\n    \"A small plate of fresh tomatoes (or a decorative representation of them)\",\n    \"A handwritten card with the words ‘Querida Mrs. Okafor, siempre te recordaremos’ (Dear Mrs. Okafor, we will always remember you)\",\n    \"A small glass of agua de jamaica (hibiscus tea) – a refreshing and traditional offering\"\n  ]\n}\n```"
+    },
+    {
+      "id": "m06",
+      "mode": "guarded",
+      "ms": 263641,
+      "details": [
+        {
+          "field": "name",
+          "value": "Mrs. Okafor",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "relationship",
+          "value": "neighbor",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "favorite_foods",
+          "value": "tomatoes",
+          "support": 1,
+          "fabricated": false
+        }
+      ],
+      "fabricated": 0,
+      "recall": 0.5,
+      "questions": [
+        "I wasn't sure about \"nickname\" (relationship). Did I get that right, or can you tell me in your words?",
+        "Do you remember the years Mrs. Okafor was born and passed? It is fine to leave this blank.",
+        "Was there a song Mrs. Okafor loved or sang?",
+        "Was there something Mrs. Okafor always used to say?",
+        "Is there a moment with Mrs. Okafor you want the card to remember?"
+      ],
+      "rejected": [
+        {
+          "field": "relationship",
+          "value": "nickname",
+          "quote": "called me 'little professor'",
+          "reason": "value goes beyond the quote"
+        }
+      ],
+      "raw": "```json\n{\n  \"name\": \"Mrs. Okafor\",\n  \"facts\": [\n    {\n      \"field\": \"relationship\",\n      \"value\": \"neighbor\",\n      \"quote\": \"My neighbor Mrs. Okafor\"\n    },\n    {\n      \"field\": \"favorite_foods\",\n      \"value\": \"tomatoes\",\n      \"quote\": \"grew tomatoes on her balcony\"\n    },\n    {\n      \"field\": \"actions\",\n      \"value\": \"gave tomatoes to everyone\",\n      \"quote\": \"gave them to everyone\"\n    },\n    {\n      \"field\": \"relationship\",\n      \"value\": \"nickname\",\n      \"quote\": \"called me 'little professor'\"\n    },\n    {\n      \"field\": \"actions\",\n      \"value\": \"carried books\",\n      \"quote\": \"always carried books\"\n    }\n  ],\n  \"unsure\": []\n}\n```"
+    },
+    {
+      "id": "m07",
+      "mode": "naive",
+      "ms": 39754,
+      "details": [
+        {
+          "field": "name",
+          "value": "Ernesto",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "relationship",
+          "value": "Tío (Uncle)",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "years",
+          "value": "Years of memories spanning decades, though the specific number isn't stated. Implied to be significant.",
+          "support": 0.09,
+          "fabricated": true
+        },
+        {
+          "field": "favorite_foods",
+          "value": "Traditional Mexican sweets (pan de muerto, paletas)",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "favorite_foods",
+          "value": "Tamales (likely his preference)",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "favorite_foods",
+          "value": "Horchata",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "songs",
+          "value": "Mariachi music (fitting for a plaza setting)",
+          "support": 0.2,
+          "fabricated": true
+        },
+        {
+          "field": "songs",
+          "value": "Traditional Mexican folk songs",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "songs",
+          "value": "Perhaps a favorite song he enjoyed, though none are explicitly mentioned",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "sayings",
+          "value": "‘Never lost gracefully’ – Reflecting his competitive spirit and perhaps a jovial nature.",
+          "support": 0.22,
+          "fabricated": true
+        },
+        {
+          "field": "sayings",
+          "value": "‘The same brown hat for years’ – Symbolizing constancy and tradition.",
+          "support": 0.43,
+          "fabricated": true
+        },
+        {
+          "field": "sayings",
+          "value": "‘A good time was always had’ – Implied by his plaza dominoes.",
+          "support": 0.33,
+          "fabricated": true
+        },
+        {
+          "field": "stories",
+          "value": "Tío Ernesto spent his evenings playing dominoes in the plaza.",
+          "support": 0.71,
+          "fabricated": true
+        },
+        {
+          "field": "stories",
+          "value": "He always played with a twinkle in his eye and a competitive spirit.",
+          "support": 0.2,
+          "fabricated": true
+        },
+        {
+          "field": "stories",
+          "value": "He was known for never losing gracefully, always with a playful remark.",
+          "support": 0.33,
+          "fabricated": true
+        },
+        {
+          "field": "stories",
+          "value": "He wore the same brown hat, a familiar sight for everyone in the neighborhood.",
+          "support": 0.5,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "A brown hat (replica or symbolic representation)",
+          "support": 0.4,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "A domino set (representing his favorite pastime)",
+          "support": 0.2,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "Pan de muerto (a traditional Day of the Dead bread)",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "Paletas (Mexican popsicles, a sweet treat)",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "Horchata (a refreshing drink)",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "A photograph of Tío Ernesto wearing his brown hat",
+          "support": 0.67,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "Copal incense (for purification and honoring the deceased)",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "Marigolds (cempasúles) – Vibrant orange and yellow flowers to guide spirits",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "Sugar skulls (decorated with his name)",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "A small plate of his favorite food (tamales)",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "A handwritten card with a heartfelt message of remembrance",
+          "support": 0,
+          "fabricated": true
+        }
+      ],
+      "fabricated": 25,
+      "recall": 1,
+      "questions": [],
+      "rejected": [],
+      "raw": "```json\n{\n  \"name\": \"Ernesto\",\n  \"relationship\": \"Tío (Uncle)\",\n  \"years\": \"Years of memories spanning decades, though the specific number isn't stated. Implied to be significant.\",\n  \"favorite_foods\": [\n    \"Traditional Mexican sweets (pan de muerto, paletas)\",\n    \"Tamales (likely his preference)\",\n    \"Horchata\"\n  ],\n  \"songs\": [\n    \"Mariachi music (fitting for a plaza setting)\",\n    \"Traditional Mexican folk songs\",\n    \"Perhaps a favorite song he enjoyed, though none are explicitly mentioned\"\n  ],\n  \"sayings\": [\n    \"‘Never lost gracefully’ – Reflecting his competitive spirit and perhaps a jovial nature.\",\n    \"‘The same brown hat for years’ – Symbolizing constancy and tradition.\",\n    \"‘A good time was always had’ – Implied by his plaza dominoes.\"\n  ],\n  \"stories\": [\n    \"Tío Ernesto spent his evenings playing dominoes in the plaza.\",\n    \"He always played with a twinkle in his eye and a competitive spirit.\",\n    \"He was known for never losing gracefully, always with a playful remark.\",\n    \"He wore the same brown hat, a familiar sight for everyone in the neighborhood.\"\n  ],\n  \"altar_items\": [\n    \"A brown hat (replica or symbolic representation)\",\n    \"A domino set (representing his favorite pastime)\",\n    \"Pan de muerto (a traditional Day of the Dead bread)\",\n    \"Paletas (Mexican popsicles, a sweet treat)\",\n    \"Horchata (a refreshing drink)\",\n    \"A photograph of Tío Ernesto wearing his brown hat\",\n    \"Copal incense (for purification and honoring the deceased)\",\n    \"Marigolds (cempasúles) – Vibrant orange and yellow flowers to guide spirits\",\n    \"Sugar skulls (decorated with his name)\",\n    \"A small plate of his favorite food (tamales)\",\n    \"A handwritten card with a heartfelt message of remembrance\"\n  ]\n}\n```"
+    },
+    {
+      "id": "m07",
+      "mode": "guarded",
+      "ms": 18013,
+      "details": [
+        {
+          "field": "name",
+          "value": "Tío Ernesto",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "relationship",
+          "value": "uncle",
+          "support": 1,
+          "fabricated": false
+        }
+      ],
+      "fabricated": 0,
+      "recall": 0,
+      "questions": [
+        "Do you remember the years Tío Ernesto was born and passed? It is fine to leave this blank.",
+        "What food would you put on the altar for Tío Ernesto?",
+        "Was there a song Tío Ernesto loved or sang?",
+        "Was there something Tío Ernesto always used to say?",
+        "Is there a moment with Tío Ernesto you want the card to remember?"
+      ],
+      "rejected": [],
+      "raw": "```json\n{\n  \"name\": \"Tío Ernesto\",\n  \"facts\": [\n    {\n      \"field\": \"relationship\",\n      \"value\": \"uncle\",\n      \"quote\": \"Tío Ernesto\"\n    },\n    {\n      \"field\": \"activity\",\n      \"value\": \"playing dominoes\",\n      \"quote\": \"played dominoes at the plaza\"\n    },\n    {\n      \"field\": \"activity\",\n      \"value\": \"playing dominoes daily\",\n      \"quote\": \"every evening\"\n    },\n    {\n      \"field\": \"manner\",\n      \"value\": \"losing gracefully\",\n      \"quote\": \"never lost gracefully\"\n    },\n    {\n      \"field\": \"clothing\",\n      \"value\": \"brown hat\",\n      \"quote\": \"He wore the same brown hat\"\n    },\n    {\n      \"field\": \"clothing\",\n      \"value\": \"wearing a brown hat\",\n      \"quote\": \"for years\"\n    }\n  ],\n  \"unsure\": []\n}\n```"
+    },
+    {
+      "id": "m08",
+      "mode": "naive",
+      "ms": 21784,
+      "details": [
+        {
+          "field": "name",
+          "value": "Lucía",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "relationship",
+          "value": "Grandmother",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "years",
+          "value": "Unknown",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "favorite_foods",
+          "value": "Pan de Muerto",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "favorite_foods",
+          "value": "Orange Zest",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "songs",
+          "value": "Traditional Mexican Folk Music",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "songs",
+          "value": "Songs from her childhood",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "sayings",
+          "value": "‘Siempre en mi corazón’ (Always in my heart)",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "sayings",
+          "value": "‘Recuerdos que perduran’ (Memories that endure)",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "sayings",
+          "value": "‘Que descanses en paz’ (May you rest in peace)",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "stories",
+          "value": "She made pan de muerto with orange zest, a special treat.",
+          "support": 0.75,
+          "fabricated": true
+        },
+        {
+          "field": "stories",
+          "value": "She shared the story of crossing the river with her daughter on her back.",
+          "support": 0.67,
+          "fabricated": true
+        },
+        {
+          "field": "stories",
+          "value": "She always had a warm smile and a comforting hug.",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "stories",
+          "value": "Her love was a constant source of strength and joy.",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "Pan de Muerto (decorated with orange zest)",
+          "support": 0.83,
+          "fabricated": false
+        },
+        {
+          "field": "altar_items",
+          "value": "Orange slices",
+          "support": 0.5,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "A small, handmade doll (representing a child's spirit)",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "A picture of Lucía",
+          "support": 0.5,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "A small, embroidered shawl (representing her warmth and comfort)",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "Cempasúchil (Marigolds) – vibrant orange flowers",
+          "support": 0.2,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "Candles (representing light and remembrance)",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "A glass of water (for the soul's thirst)",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "A small, handwritten note expressing love and gratitude",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "Sugar skulls (decorated with her name)",
+          "support": 0,
+          "fabricated": true
+        }
+      ],
+      "fabricated": 19,
+      "recall": 1,
+      "questions": [],
+      "rejected": [],
+      "raw": "```json\n{\n  \"name\": \"Lucía\",\n  \"relationship\": \"Grandmother\",\n  \"years\": \"Unknown\",\n  \"favorite_foods\": [\n    \"Pan de Muerto\",\n    \"Orange Zest\"\n  ],\n  \"songs\": [\n    \"Traditional Mexican Folk Music\",\n    \"Songs from her childhood\"\n  ],\n  \"sayings\": [\n    \"‘Siempre en mi corazón’ (Always in my heart)\",\n    \"‘Recuerdos que perduran’ (Memories that endure)\",\n    \"‘Que descanses en paz’ (May you rest in peace)\"\n  ],\n  \"stories\": [\n    \"She made pan de muerto with orange zest, a special treat.\",\n    \"She shared the story of crossing the river with her daughter on her back.\",\n    \"She always had a warm smile and a comforting hug.\",\n    \"Her love was a constant source of strength and joy.\"\n  ],\n  \"altar_items\": [\n    \"Pan de Muerto (decorated with orange zest)\",\n    \"Orange slices\",\n    \"A small, handmade doll (representing a child's spirit)\",\n    \"A picture of Lucía\",\n    \"A small, embroidered shawl (representing her warmth and comfort)\",\n    \"Cempasúchil (Marigolds) – vibrant orange flowers\",\n    \"Candles (representing light and remembrance)\",\n    \"A glass of water (for the soul's thirst)\",\n    \"A small, handwritten note expressing love and gratitude\",\n    \"Sugar skulls (decorated with her name)\"\n  ]\n}\n```"
+    },
+    {
+      "id": "m08",
+      "mode": "guarded",
+      "ms": 10504,
+      "details": [
+        {
+          "field": "name",
+          "value": "Lucía",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "relationship",
+          "value": "grandmother",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "favorite_foods",
+          "value": "pan de muerto with orange zest",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "stories",
+          "value": "crossing the river with her mother on her back",
+          "support": 1,
+          "fabricated": false
+        }
+      ],
+      "fabricated": 0,
+      "recall": 1,
+      "questions": [
+        "Do you remember the years Lucía was born and passed? It is fine to leave this blank.",
+        "Was there a song Lucía loved or sang?",
+        "Was there something Lucía always used to say?",
+        "Is there an object that reminds you of Lucía?"
+      ],
+      "rejected": [],
+      "raw": "```json\n{\n  \"name\": \"Lucía\",\n  \"facts\": [\n    {\n      \"field\": \"relationship\",\n      \"value\": \"grandmother\",\n      \"quote\": \"My grandmother Lucía\"\n    },\n    {\n      \"field\": \"favorite_foods\",\n      \"value\": \"pan de muerto with orange zest\",\n      \"quote\": \"made pan de muerto with orange zest\"\n    },\n    {\n      \"field\": \"stories\",\n      \"value\": \"crossing the river with her mother on her back\",\n      \"quote\": \"She told the story of crossing the river with my mother on her back.\"\n    }\n  ],\n  \"unsure\": []\n}\n```"
+    },
+    {
+      "id": "m09",
+      "mode": "naive",
+      "ms": 28185,
+      "details": [
+        {
+          "field": "name",
+          "value": "Pepita",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "relationship",
+          "value": "Beloved Dog",
+          "support": 0.5,
+          "fabricated": true
+        },
+        {
+          "field": "years",
+          "value": "A lifetime of joy and companionship",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "favorite_foods",
+          "value": "Dog biscuits (of course!)",
+          "support": 0.33,
+          "fabricated": true
+        },
+        {
+          "field": "favorite_foods",
+          "value": "Small pieces of chicken",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "favorite_foods",
+          "value": "A bit of cheese",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "songs",
+          "value": "La Cucaracha (a playful tune she’d enjoy)",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "songs",
+          "value": "Spanish guitar music - calming and nostalgic",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "songs",
+          "value": "Anything with a happy, upbeat melody",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "sayings",
+          "value": "Siempre en nuestros corazones.",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "sayings",
+          "value": "Que descanses en paz, querida Pepita.",
+          "support": 0.17,
+          "fabricated": true
+        },
+        {
+          "field": "sayings",
+          "value": "Tu amor nunca se olvidará.",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "sayings",
+          "value": "Te extrañamos mucho.",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "stories",
+          "value": "Pepita greeted us with unwavering enthusiasm every single day.",
+          "support": 0.29,
+          "fabricated": true
+        },
+        {
+          "field": "stories",
+          "value": "She had a particular fondness for stealing socks – a mischievous habit we adored.",
+          "support": 0.13,
+          "fabricated": true
+        },
+        {
+          "field": "stories",
+          "value": "Her tail wags were a constant reminder of her joyful spirit.",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "stories",
+          "value": "She was the best listener, always there with a comforting presence.",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "stories",
+          "value": "We’ll always remember her loyal heart and happy spirit.",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "A small, framed photograph of Pepita",
+          "support": 0.25,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "A plush dog toy (her favorite)",
+          "support": 0.25,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "A bowl of dog biscuits",
+          "support": 0.33,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "A few of her favorite socks (displayed respectfully)",
+          "support": 0.2,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "A small, hand-painted ceramic dog figurine",
+          "support": 0.17,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "Copal incense burner and copal resin",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "Marigolds (cempasúchil) – vibrant orange and yellow",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "Sugar skulls (decorated with her name)",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "A glass of water",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "A small, handwritten card with a heartfelt message: 'Rest in peace, sweet Pepita. You were a true member of our family.'",
+          "support": 0.07,
+          "fabricated": true
+        }
+      ],
+      "fabricated": 27,
+      "recall": 0.5,
+      "questions": [],
+      "rejected": [],
+      "raw": "```json\n{\n  \"name\": \"Pepita\",\n  \"relationship\": \"Beloved Dog\",\n  \"years\": \"A lifetime of joy and companionship\",\n  \"favorite_foods\": [\n    \"Dog biscuits (of course!)\",\n    \"Small pieces of chicken\",\n    \"A bit of cheese\"\n  ],\n  \"songs\": [\n    \"La Cucaracha (a playful tune she’d enjoy)\",\n    \"Spanish guitar music - calming and nostalgic\",\n    \"Anything with a happy, upbeat melody\"\n  ],\n  \"sayings\": [\n    \"Siempre en nuestros corazones.\",\n    \"Que descanses en paz, querida Pepita.\",\n    \"Tu amor nunca se olvidará.\",\n    \"Te extrañamos mucho.\"\n  ],\n  \"stories\": [\n    \"Pepita greeted us with unwavering enthusiasm every single day.\",\n    \"She had a particular fondness for stealing socks – a mischievous habit we adored.\",\n    \"Her tail wags were a constant reminder of her joyful spirit.\",\n    \"She was the best listener, always there with a comforting presence.\",\n    \"We’ll always remember her loyal heart and happy spirit.\"\n  ],\n  \"altar_items\": [\n    \"A small, framed photograph of Pepita\",\n    \"A plush dog toy (her favorite)\",\n    \"A bowl of dog biscuits\",\n    \"A few of her favorite socks (displayed respectfully)\",\n    \"A small, hand-painted ceramic dog figurine\",\n    \"Copal incense burner and copal resin\",\n    \"Marigolds (cempasúchil) – vibrant orange and yellow\",\n    \"Sugar skulls (decorated with her name)\",\n    \"A glass of water\",\n    \"A small, handwritten card with a heartfelt message: 'Rest in peace, sweet Pepita. You were a true member of our family.'\"\n  ]\n}\n```"
+    },
+    {
+      "id": "m09",
+      "mode": "guarded",
+      "ms": 8917,
+      "details": [
+        {
+          "field": "name",
+          "value": "Pepita",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "relationship",
+          "value": "dog",
+          "support": 1,
+          "fabricated": false
+        }
+      ],
+      "fabricated": 0,
+      "recall": 0,
+      "questions": [
+        "Do you remember the years Pepita was born and passed? It is fine to leave this blank.",
+        "What food would you put on the altar for Pepita?",
+        "Was there a song Pepita loved or sang?",
+        "Was there something Pepita always used to say?",
+        "Is there a moment with Pepita you want the card to remember?"
+      ],
+      "rejected": [],
+      "raw": "```json\n{\n  \"name\": \"Pepita\",\n  \"facts\": [\n    {\n      \"field\": \"relationship\",\n      \"value\": \"dog\",\n      \"quote\": \"She waited by the door\"\n    },\n    {\n      \"field\": \"facts\",\n      \"value\": \"daily routine\",\n      \"quote\": \"every day at five\"\n    },\n    {\n      \"field\": \"facts\",\n      \"value\": \"behavior\",\n      \"quote\": \"She stole socks\"\n    }\n  ],\n  \"unsure\": []\n}\n```"
+    },
+    {
+      "id": "m10",
+      "mode": "naive",
+      "ms": 24036,
+      "details": [
+        {
+          "field": "name",
+          "value": "Hiro Tanaka",
+          "support": 0.5,
+          "fabricated": true
+        },
+        {
+          "field": "relationship",
+          "value": "Grandfather",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "years",
+          "value": "Unknown (cherished throughout my life)",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "favorite_foods",
+          "value": "Mochi",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "favorite_foods",
+          "value": "Sushi",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "favorite_foods",
+          "value": "Tempura",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "favorite_foods",
+          "value": "Green Tea Ice Cream",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "songs",
+          "value": "Jazz (specifically, I remember the feeling of it, not the titles)",
+          "support": 0.5,
+          "fabricated": true
+        },
+        {
+          "field": "songs",
+          "value": "Miles Davis",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "songs",
+          "value": "Ella Fitzgerald",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "songs",
+          "value": "Anything with a smooth saxophone",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "sayings",
+          "value": "‘Always remember to be kind.’",
+          "support": 0.33,
+          "fabricated": true
+        },
+        {
+          "field": "sayings",
+          "value": "‘A good game is more important than winning.’",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "sayings",
+          "value": "‘Don’t be afraid to try new things.’",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "stories",
+          "value": "Grandpa Hiro taught me chess on a board with one missing knight, replaced by a bottle cap.",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "stories",
+          "value": "He always had a twinkle in his eye and a warm smile.",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "stories",
+          "value": "I remember the scent of his pipe tobacco and the sound of his laughter.",
+          "support": 0.29,
+          "fabricated": true
+        },
+        {
+          "field": "stories",
+          "value": "He showed me how to appreciate the beauty of silence.",
+          "support": 0.17,
+          "fabricated": true
+        },
+        {
+          "field": "stories",
+          "value": "His love was a quiet strength, a constant comfort.",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "Chessboard with a bottle cap knight",
+          "support": 0.75,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "Small jazz record (representing his love of music)",
+          "support": 0.4,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "A single green tea leaf",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "A miniature bottle of sake (symbolizing celebration and remembrance)",
+          "support": 0.17,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "A photograph of Grandpa Hiro smiling",
+          "support": 0.5,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "Marigolds (cempasúchil) - vibrant orange to guide his spirit",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "Sugar skull (calavera) - a sweet reminder of his presence",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "Candles - to illuminate his path",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "Papel picado - colorful banners to welcome him home",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "A small offering of mochi",
+          "support": 0,
+          "fabricated": true
+        }
+      ],
+      "fabricated": 27,
+      "recall": 1,
+      "questions": [],
+      "rejected": [],
+      "raw": "```json\n{\n  \"name\": \"Hiro Tanaka\",\n  \"relationship\": \"Grandfather\",\n  \"years\": \"Unknown (cherished throughout my life)\",\n  \"favorite_foods\": [\n    \"Mochi\",\n    \"Sushi\",\n    \"Tempura\",\n    \"Green Tea Ice Cream\"\n  ],\n  \"songs\": [\n    \"Jazz (specifically, I remember the feeling of it, not the titles)\",\n    \"Miles Davis\",\n    \"Ella Fitzgerald\",\n    \"Anything with a smooth saxophone\"\n  ],\n  \"sayings\": [\n    \"‘Always remember to be kind.’\",\n    \"‘A good game is more important than winning.’\",\n    \"‘Don’t be afraid to try new things.’\"\n  ],\n  \"stories\": [\n    \"Grandpa Hiro taught me chess on a board with one missing knight, replaced by a bottle cap.\",\n    \"He always had a twinkle in his eye and a warm smile.\",\n    \"I remember the scent of his pipe tobacco and the sound of his laughter.\",\n    \"He showed me how to appreciate the beauty of silence.\",\n    \"His love was a quiet strength, a constant comfort.\"\n  ],\n  \"altar_items\": [\n    \"Chessboard with a bottle cap knight\",\n    \"Small jazz record (representing his love of music)\",\n    \"A single green tea leaf\",\n    \"A miniature bottle of sake (symbolizing celebration and remembrance)\",\n    \"A photograph of Grandpa Hiro smiling\",\n    \"Marigolds (cempasúchil) - vibrant orange to guide his spirit\",\n    \"Sugar skull (calavera) - a sweet reminder of his presence\",\n    \"Candles - to illuminate his path\",\n    \"Papel picado - colorful banners to welcome him home\",\n    \"A small offering of mochi\"\n  ]\n}\n```"
+    },
+    {
+      "id": "m10",
+      "mode": "guarded",
+      "ms": 10217,
+      "details": [
+        {
+          "field": "name",
+          "value": "Grandpa Hiro",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "relationship",
+          "value": "taught me chess",
+          "support": 1,
+          "fabricated": false
+        }
+      ],
+      "fabricated": 0,
+      "recall": 0.3333333333333333,
+      "questions": [
+        "Do you remember the years Grandpa Hiro was born and passed? It is fine to leave this blank.",
+        "What food would you put on the altar for Grandpa Hiro?",
+        "Was there a song Grandpa Hiro loved or sang?",
+        "Was there something Grandpa Hiro always used to say?",
+        "Is there a moment with Grandpa Hiro you want the card to remember?"
+      ],
+      "rejected": [],
+      "raw": "```json\n{\n  \"name\": \"Grandpa Hiro\",\n  \"facts\": [\n    {\n      \"field\": \"relationship\",\n      \"value\": \"taught me chess\",\n      \"quote\": \"Grandpa Hiro taught me chess\"\n    },\n    {\n      \"field\": \"favorite_items\",\n      \"value\": \"board with one missing knight, replaced by a bottle cap\",\n      \"quote\": \"board with one missing knight, replaced by a bottle cap\"\n    },\n    {\n      \"field\": \"favorite_music\",\n      \"value\": \"liked jazz\",\n      \"quote\": \"He liked jazz\"\n    }\n  ],\n  \"unsure\": [\n    \"which records\"\n  ]\n}\n```"
+    },
+    {
+      "id": "m11",
+      "mode": "naive",
+      "ms": 19905,
+      "details": [
+        {
+          "field": "name",
+          "value": "Inés",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "relationship",
+          "value": "Mamá",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "years",
+          "value": "Unknown",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "favorite_foods",
+          "value": "Tamales",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "favorite_foods",
+          "value": "Pan de Muerto",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "favorite_foods",
+          "value": "Champurrado",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "songs",
+          "value": "Las Mañanitas",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "songs",
+          "value": "Cielito Lindo",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "songs",
+          "value": "Volver, Volver",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "sayings",
+          "value": "Siempre en nuestros corazones.",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "sayings",
+          "value": "Recuerdos que nunca se desvanecen.",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "sayings",
+          "value": "Que descanses en paz, Mamá Inés.",
+          "support": 0.33,
+          "fabricated": true
+        },
+        {
+          "field": "stories",
+          "value": "Mamá Inés always wrote letters in green ink, a beautiful and unique way to connect with others.",
+          "support": 0.55,
+          "fabricated": true
+        },
+        {
+          "field": "stories",
+          "value": "She had a deep love for marigolds, filling her garden with their vibrant colors every October.",
+          "support": 0.29,
+          "fabricated": true
+        },
+        {
+          "field": "stories",
+          "value": "Her warmth and kindness touched everyone she knew.",
+          "support": 0.2,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "Green ink pen and paper (representing her letters)",
+          "support": 0.5,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "A vase of marigolds (her favorite flower)",
+          "support": 0.25,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "A plate of Pan de Muerto",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "A bowl of Tamales",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "A glass of Champurrado",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "A framed photograph of Mamá Inés",
+          "support": 0.5,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "A small, green ribbon",
+          "support": 0.33,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "Candles (white and yellow)",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "Sugar skulls",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "Papel picado (colorful paper banners)",
+          "support": 0,
+          "fabricated": true
+        }
+      ],
+      "fabricated": 23,
+      "recall": 1,
+      "questions": [],
+      "rejected": [],
+      "raw": "```json\n{\n  \"name\": \"Inés\",\n  \"relationship\": \"Mamá\",\n  \"years\": \"Unknown\",\n  \"favorite_foods\": [\n    \"Tamales\",\n    \"Pan de Muerto\",\n    \"Champurrado\"\n  ],\n  \"songs\": [\n    \"Las Mañanitas\",\n    \"Cielito Lindo\",\n    \"Volver, Volver\"\n  ],\n  \"sayings\": [\n    \"Siempre en nuestros corazones.\",\n    \"Recuerdos que nunca se desvanecen.\",\n    \"Que descanses en paz, Mamá Inés.\"\n  ],\n  \"stories\": [\n    \"Mamá Inés always wrote letters in green ink, a beautiful and unique way to connect with others.\",\n    \"She had a deep love for marigolds, filling her garden with their vibrant colors every October.\",\n    \"Her warmth and kindness touched everyone she knew.\"\n  ],\n  \"altar_items\": [\n    \"Green ink pen and paper (representing her letters)\",\n    \"A vase of marigolds (her favorite flower)\",\n    \"A plate of Pan de Muerto\",\n    \"A bowl of Tamales\",\n    \"A glass of Champurrado\",\n    \"A framed photograph of Mamá Inés\",\n    \"A small, green ribbon\",\n    \"Candles (white and yellow)\",\n    \"Sugar skulls\",\n    \"Papel picado (colorful paper banners)\"\n  ]\n}\n```"
+    },
+    {
+      "id": "m11",
+      "mode": "guarded",
+      "ms": 9427,
+      "details": [
+        {
+          "field": "name",
+          "value": "Mamá Inés",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "relationship",
+          "value": "wrote letters to everyone",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "favorite_foods",
+          "value": "marigolds",
+          "support": 1,
+          "fabricated": false
+        }
+      ],
+      "fabricated": 0,
+      "recall": 0.5,
+      "questions": [
+        "Do you remember the years Mamá Inés was born and passed? It is fine to leave this blank.",
+        "Was there a song Mamá Inés loved or sang?",
+        "Was there something Mamá Inés always used to say?",
+        "Is there a moment with Mamá Inés you want the card to remember?",
+        "Is there an object that reminds you of Mamá Inés?"
+      ],
+      "rejected": [],
+      "raw": "```json\n{\n  \"name\": \"Mamá Inés\",\n  \"facts\": [\n    {\n      \"field\": \"relationship\",\n      \"value\": \"wrote letters to everyone\",\n      \"quote\": \"Mamá Inés wrote letters to everyone\"\n    },\n    {\n      \"field\": \"favorite_foods\",\n      \"value\": \"marigolds\",\n      \"quote\": \"She loved marigolds\"\n    },\n    {\n      \"field\": \"actions\",\n      \"value\": \"planted marigolds every October\",\n      \"quote\": \"and planted them every October\"\n    }\n  ],\n  \"unsure\": []\n}\n```"
+    },
+    {
+      "id": "m12",
+      "mode": "naive",
+      "ms": 25303,
+      "details": [
+        {
+          "field": "name",
+          "value": "Javi",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "relationship",
+          "value": "Cousin",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "years",
+          "value": "Unknown (valued deeply)",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "favorite_foods",
+          "value": "Chilaquiles",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "favorite_foods",
+          "value": "Anything he made with love",
+          "support": 0.5,
+          "fabricated": true
+        },
+        {
+          "field": "songs",
+          "value": "Traditional Mexican music (likely upbeat and joyful)",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "songs",
+          "value": "Anything that made him laugh – likely lively and spirited",
+          "support": 0.14,
+          "fabricated": true
+        },
+        {
+          "field": "sayings",
+          "value": "‘Laughter is the best medicine,’",
+          "support": 0.25,
+          "fabricated": true
+        },
+        {
+          "field": "sayings",
+          "value": "‘A good heart is all that matters,’",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "sayings",
+          "value": "‘May your spirit find peace’",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "sayings",
+          "value": "‘Remembered with joy’",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "stories",
+          "value": "Javi fixed bikes with a joyful spirit.",
+          "support": 0.6,
+          "fabricated": true
+        },
+        {
+          "field": "stories",
+          "value": "His chilaquiles were legendary, a true delight.",
+          "support": 0.25,
+          "fabricated": true
+        },
+        {
+          "field": "stories",
+          "value": "He laughed so loudly, it brought smiles to everyone’s faces.",
+          "support": 0.17,
+          "fabricated": true
+        },
+        {
+          "field": "stories",
+          "value": "He always had a kind word and a helping hand.",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "A small, well-maintained bicycle (or a bicycle wheel)",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "A colorful ceramic bowl filled with chilaquiles (or ingredients for them - tortillas, salsa, cheese, chicken)",
+          "support": 0.09,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "A recording of laughter (or a small speaker playing upbeat Mexican music)",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "A framed photograph of Javi smiling",
+          "support": 0.25,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "Marigolds (cempasúchil) – vibrant orange and yellow",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "Papel picado – colorful cut-out paper banners",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "Candles – representing light and remembrance",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "Sugar skulls – decorated with his name",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "A small offering of his favorite drink (perhaps horchata or agua fresca)",
+          "support": 0,
+          "fabricated": true
+        },
+        {
+          "field": "altar_items",
+          "value": "A hand-written card with a heartfelt message: ‘Querido Javi, tu risa nos llena de alegría. Siempre te recordaremos con amor.’ (Dear Javi, your laughter fills us with joy. We will always remember you with love.)",
+          "support": 0.07,
+          "fabricated": true
+        }
+      ],
+      "fabricated": 22,
+      "recall": 1,
+      "questions": [],
+      "rejected": [],
+      "raw": "```json\n{\n  \"name\": \"Javi\",\n  \"relationship\": \"Cousin\",\n  \"years\": \"Unknown (valued deeply)\",\n  \"favorite_foods\": [\n    \"Chilaquiles\",\n    \"Anything he made with love\"\n  ],\n  \"songs\": [\n    \"Traditional Mexican music (likely upbeat and joyful)\",\n    \"Anything that made him laugh – likely lively and spirited\"\n  ],\n  \"sayings\": [\n    \"‘Laughter is the best medicine,’\",\n    \"‘A good heart is all that matters,’\",\n    \"‘May your spirit find peace’\",\n    \"‘Remembered with joy’\"\n  ],\n  \"stories\": [\n    \"Javi fixed bikes with a joyful spirit.\",\n    \"His chilaquiles were legendary, a true delight.\",\n    \"He laughed so loudly, it brought smiles to everyone’s faces.\",\n    \"He always had a kind word and a helping hand.\"\n  ],\n  \"altar_items\": [\n    \"A small, well-maintained bicycle (or a bicycle wheel)\",\n    \"A colorful ceramic bowl filled with chilaquiles (or ingredients for them - tortillas, salsa, cheese, chicken)\",\n    \"A recording of laughter (or a small speaker playing upbeat Mexican music)\",\n    \"A framed photograph of Javi smiling\",\n    \"Marigolds (cempasúchil) – vibrant orange and yellow\",\n    \"Papel picado – colorful cut-out paper banners\",\n    \"Candles – representing light and remembrance\",\n    \"Sugar skulls – decorated with his name\",\n    \"A small offering of his favorite drink (perhaps horchata or agua fresca)\",\n    \"A hand-written card with a heartfelt message: ‘Querido Javi, tu risa nos llena de alegría. Siempre te recordaremos con amor.’ (Dear Javi, your laughter fills us with joy. We will always remember you with love.)\"\n  ]\n}\n```"
+    },
+    {
+      "id": "m12",
+      "mode": "guarded",
+      "ms": 9225,
+      "details": [
+        {
+          "field": "name",
+          "value": "Javi",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "relationship",
+          "value": "cousin",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "favorite_foods",
+          "value": "chilaquiles",
+          "support": 1,
+          "fabricated": false
+        }
+      ],
+      "fabricated": 0,
+      "recall": 0.3333333333333333,
+      "questions": [
+        "Do you remember the years Javi was born and passed? It is fine to leave this blank.",
+        "Was there a song Javi loved or sang?",
+        "Was there something Javi always used to say?",
+        "Is there a moment with Javi you want the card to remember?",
+        "Is there an object that reminds you of Javi?"
+      ],
+      "rejected": [],
+      "raw": "```json\n{\n  \"name\": \"Javi\",\n  \"facts\": [\n    {\n      \"field\": \"relationship\",\n      \"value\": \"cousin\",\n      \"quote\": \"My cousin Javi\"\n    },\n    {\n      \"field\": \"favorite_foods\",\n      \"value\": \"chilaquiles\",\n      \"quote\": \"He made the best chilaquiles\"\n    },\n    {\n      \"field\": \"personality\",\n      \"value\": \"laughed loudly\",\n      \"quote\": \"He laughed so loud the neighbors complained\"\n    }\n  ],\n  \"unsure\": []\n}\n```"
+    }
+  ]
+}

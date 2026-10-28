@@ -1,0 +1,661 @@
+{
+  "summary": {
+    "model": "gemma3:4b",
+    "date": "2026-10-28T07:27:21.786Z",
+    "naive": {
+      "cards": 0,
+      "details": 0,
+      "fabricated": 0,
+      "fabricated_pct": null,
+      "cards_with_fabrication": 0,
+      "gold_recall_pct": null,
+      "avg_questions": null,
+      "avg_seconds": null
+    },
+    "guarded": {
+      "cards": 12,
+      "details": 54,
+      "fabricated": 0,
+      "fabricated_pct": 0,
+      "cards_with_fabrication": 0,
+      "gold_recall_pct": 87.5,
+      "avg_questions": 4.9,
+      "avg_seconds": 13.7
+    },
+    "proposed_then_rejected_by_verifier": 14
+  },
+  "runs": [
+    {
+      "id": "m01",
+      "mode": "guarded",
+      "ms": 16882,
+      "details": [
+        {
+          "field": "name",
+          "value": "Rosalía",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "relationship",
+          "value": "great-aunt",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "songs",
+          "value": "hummed a song",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "stories",
+          "value": "raised chickens",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "stories",
+          "value": "made mole negro",
+          "support": 1,
+          "fabricated": false
+        }
+      ],
+      "fabricated": 0,
+      "recall": 1,
+      "questions": [
+        "I wasn't sure about \"stirred mole negro\" (stories). Did I get that right, or can you tell me in your words?",
+        "I wasn't sure about \"hummed while cooking\" (stories). Did I get that right, or can you tell me in your words?",
+        "Do you remember the years Rosalía was born and passed? It is fine to leave this blank.",
+        "What food would you put on the altar for Rosalía?",
+        "Was there something Rosalía always used to say?"
+      ],
+      "rejected": [
+        {
+          "field": "stories",
+          "value": "stirred mole negro",
+          "quote": "she would not let anyone help stir it",
+          "reason": "value goes beyond the quote"
+        },
+        {
+          "field": "stories",
+          "value": "hummed while cooking",
+          "quote": "She hummed while she cooked",
+          "reason": "value goes beyond the quote"
+        }
+      ],
+      "raw": "```json\n{\n  \"name\": \"Rosalía\",\n  \"facts\": [\n    {\n      \"field\": \"relationship\",\n      \"value\": \"great-aunt\",\n      \"quote\": \"My great-aunt Rosalía\"\n    },\n    {\n      \"field\": \"activities\",\n      \"value\": \"raised chickens\",\n      \"quote\": \"My great-aunt Rosalía raised chickens behind her house\"\n    },\n    {\n      \"field\": \"activities\",\n      \"value\": \"made mole negro\",\n      \"quote\": \"Every Sunday she made mole negro\"\n    },\n    {\n      \"field\": \"activities\",\n      \"value\": \"stirred mole negro\",\n      \"quote\": \"she would not let anyone help stir it\"\n    },\n    {\n      \"field\": \"activities\",\n      \"value\": \"hummed while cooking\",\n      \"quote\": \"She hummed while she cooked\"\n    },\n    {\n      \"field\": \"songs\",\n      \"value\": \"hummed a song\",\n      \"quote\": \"I never learned the song\"\n    }\n  ],\n  \"unsure\": []\n}\n```"
+    },
+    {
+      "id": "m02",
+      "mode": "guarded",
+      "ms": 11398,
+      "details": [
+        {
+          "field": "name",
+          "value": "Teodoro",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "favorite_foods",
+          "value": "coffee with too much sugar",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "sayings",
+          "value": "Everything broken just needs patience.",
+          "support": 0.8,
+          "fabricated": false
+        },
+        {
+          "field": "stories",
+          "value": "fixed radios",
+          "support": 1,
+          "fabricated": false
+        }
+      ],
+      "fabricated": 0,
+      "recall": 1,
+      "questions": [
+        "I wasn't sure about \"Grandpa\" (relationship). Did I get that right, or can you tell me in your words?",
+        "How were you related to Teodoro?",
+        "Do you remember the years Teodoro was born and passed? It is fine to leave this blank.",
+        "Was there a song Teodoro loved or sang?",
+        "Is there an object that reminds you of Teodoro?"
+      ],
+      "rejected": [
+        {
+          "field": "relationship",
+          "value": "Grandpa",
+          "quote": "",
+          "reason": "no quote"
+        }
+      ],
+      "raw": "```json\n{\n  \"name\": \"Teodoro\",\n  \"facts\": [\n    {\n      \"field\": \"relationship\",\n      \"value\": \"Grandpa\",\n      \"quote\": \"\"\n    },\n    {\n      \"field\": \"occupation\",\n      \"value\": \"fixed radios\",\n      \"quote\": \"fixed radios\"\n    },\n    {\n      \"field\": \"sayings\",\n      \"value\": \"Everything broken just needs patience.\",\n      \"quote\": \"Everything broken just needs patience.\"\n    },\n    {\n      \"field\": \"favorite_foods\",\n      \"value\": \"coffee with too much sugar\",\n      \"quote\": \"drank his coffee with too much sugar\"\n    }\n  ],\n  \"unsure\": []\n}\n```"
+    },
+    {
+      "id": "m03",
+      "mode": "guarded",
+      "ms": 11291,
+      "details": [
+        {
+          "field": "name",
+          "value": "Dani",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "favorite_foods",
+          "value": "Takis",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "stories",
+          "value": "skateboarding",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "stories",
+          "value": "terrible puns",
+          "support": 1,
+          "fabricated": false
+        }
+      ],
+      "fabricated": 0,
+      "recall": 1,
+      "questions": [
+        "I wasn't sure about \"splitting a bag of Takis\" (stories). Did I get that right, or can you tell me in your words?",
+        "You weren't sure about this: \"I don't remember what music she liked\". Do you want to add it, or leave it out?",
+        "How were you related to Dani?",
+        "Do you remember the years Dani was born and passed? It is fine to leave this blank.",
+        "Was there a song Dani loved or sang?"
+      ],
+      "rejected": [
+        {
+          "field": "stories",
+          "value": "splitting a bag of Takis",
+          "quote": "We used to split a bag of Takis after school",
+          "reason": "value goes beyond the quote"
+        }
+      ],
+      "raw": "```json\n{\n  \"name\": \"Dani\",\n  \"facts\": [\n    {\n      \"field\": \"activity\",\n      \"value\": \"skateboarding\",\n      \"quote\": \"Dani loved skateboarding\"\n    },\n    {\n      \"field\": \"activity\",\n      \"value\": \"terrible puns\",\n      \"quote\": \"Dani loved terrible puns\"\n    },\n    {\n      \"field\": \"favorite_foods\",\n      \"value\": \"Takis\",\n      \"quote\": \"We used to split a bag of Takis\"\n    },\n    {\n      \"field\": \"activity\",\n      \"value\": \"splitting a bag of Takis\",\n      \"quote\": \"We used to split a bag of Takis after school\"\n    }\n  ],\n  \"unsure\": [\n    \"I don't remember what music she liked\"\n  ]\n}\n```"
+    },
+    {
+      "id": "m04",
+      "mode": "guarded",
+      "ms": 13851,
+      "details": [
+        {
+          "field": "name",
+          "value": "Abuela Carmen",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "songs",
+          "value": "'Cielito Lindo'",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "stories",
+          "value": "sang every time it rained",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "stories",
+          "value": "tin of buttons",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "stories",
+          "value": "buttons from every coat",
+          "support": 1,
+          "fabricated": false
+        }
+      ],
+      "fabricated": 0,
+      "recall": 1,
+      "questions": [
+        "I wasn't sure about \"loved one\" (relationship). Did I get that right, or can you tell me in your words?",
+        "How were you related to Abuela Carmen?",
+        "Do you remember the years Abuela Carmen was born and passed? It is fine to leave this blank.",
+        "What food would you put on the altar for Abuela Carmen?",
+        "Was there something Abuela Carmen always used to say?"
+      ],
+      "rejected": [
+        {
+          "field": "relationship",
+          "value": "loved one",
+          "quote": "",
+          "reason": "no quote"
+        }
+      ],
+      "raw": "```json\n{\n  \"name\": \"Abuela Carmen\",\n  \"facts\": [\n    {\n      \"field\": \"relationship\",\n      \"value\": \"loved one\",\n      \"quote\": \"\"\n    },\n    {\n      \"field\": \"songs\",\n      \"value\": \"'Cielito Lindo'\",\n      \"quote\": \"sang 'Cielito Lindo'\"\n    },\n    {\n      \"field\": \"actions\",\n      \"value\": \"sang every time it rained\",\n      \"quote\": \"every time it rained\"\n    },\n    {\n      \"field\": \"possessions\",\n      \"value\": \"tin of buttons\",\n      \"quote\": \"kept a tin of buttons\"\n    },\n    {\n      \"field\": \"possessions\",\n      \"value\": \"buttons from every coat\",\n      \"quote\": \"from every coat she ever owned\"\n    }\n  ],\n  \"unsure\": []\n}\n```"
+    },
+    {
+      "id": "m05",
+      "mode": "guarded",
+      "ms": 19530,
+      "details": [
+        {
+          "field": "name",
+          "value": "Uncle Beto",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "relationship",
+          "value": "uncle",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "stories",
+          "value": "bus driver",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "stories",
+          "value": "thirty years",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "stories",
+          "value": "knew every passenger's name",
+          "support": 1,
+          "fabricated": false
+        }
+      ],
+      "fabricated": 0,
+      "recall": 0.6666666666666666,
+      "questions": [
+        "I wasn't sure about \"tamales (green)\" (favorite foods). Did I get that right, or can you tell me in your words?",
+        "I wasn't sure about \"tamales\" (favorite foods). Did I get that right, or can you tell me in your words?",
+        "You weren't sure about this: \"maybe that was my mom\". Do you want to add it, or leave it out?",
+        "Do you remember the years Uncle Beto was born and passed? It is fine to leave this blank.",
+        "What food would you put on the altar for Uncle Beto?"
+      ],
+      "rejected": [
+        {
+          "field": "favorite_foods",
+          "value": "tamales (green)",
+          "quote": "He liked tamales, I think the green ones",
+          "reason": "the person was unsure"
+        },
+        {
+          "field": "favorite_foods",
+          "value": "tamales",
+          "quote": "He liked tamales",
+          "reason": "the person was unsure"
+        }
+      ],
+      "raw": "```json\n{\n  \"name\": \"Uncle Beto\",\n  \"facts\": [\n    {\n      \"field\": \"relationship\",\n      \"value\": \"uncle\",\n      \"quote\": \"Uncle Beto\"\n    },\n    {\n      \"field\": \"occupation\",\n      \"value\": \"bus driver\",\n      \"quote\": \"He was a bus driver\"\n    },\n    {\n      \"field\": \"duration\",\n      \"value\": \"thirty years\",\n      \"quote\": \"for thirty years\"\n    },\n    {\n      \"field\": \"personality\",\n      \"value\": \"knew every passenger's name\",\n      \"quote\": \"He knew every passenger's name\"\n    },\n    {\n      \"field\": \"favorite_foods\",\n      \"value\": \"tamales (green)\",\n      \"quote\": \"He liked tamales, I think the green ones\"\n    },\n    {\n      \"field\": \"favorite_foods\",\n      \"value\": \"tamales\",\n      \"quote\": \"He liked tamales\"\n    }\n  ],\n  \"unsure\": [\n    \"maybe that was my mom\"\n  ]\n}\n```"
+    },
+    {
+      "id": "m06",
+      "mode": "guarded",
+      "ms": 13230,
+      "details": [
+        {
+          "field": "name",
+          "value": "Mrs. Okafor",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "favorite_foods",
+          "value": "tomatoes",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "stories",
+          "value": "gave tomatoes to everyone",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "stories",
+          "value": "books",
+          "support": 1,
+          "fabricated": false
+        }
+      ],
+      "fabricated": 0,
+      "recall": 0.5,
+      "questions": [
+        "I wasn't sure about \"neighbor\" (relationship). Did I get that right, or can you tell me in your words?",
+        "I wasn't sure about \"little professor\" (sayings). Did I get that right, or can you tell me in your words?",
+        "How were you related to Mrs. Okafor?",
+        "Do you remember the years Mrs. Okafor was born and passed? It is fine to leave this blank.",
+        "Was there a song Mrs. Okafor loved or sang?"
+      ],
+      "rejected": [
+        {
+          "field": "relationship",
+          "value": "neighbor",
+          "quote": "",
+          "reason": "no quote"
+        },
+        {
+          "field": "sayings",
+          "value": "little professor",
+          "quote": "called me 'little professor'",
+          "reason": "value goes beyond the quote"
+        }
+      ],
+      "raw": "```json\n{\n  \"name\": \"Mrs. Okafor\",\n  \"facts\": [\n    {\n      \"field\": \"relationship\",\n      \"value\": \"neighbor\",\n      \"quote\": \"\"\n    },\n    {\n      \"field\": \"favorite_foods\",\n      \"value\": \"tomatoes\",\n      \"quote\": \"grew tomatoes\"\n    },\n    {\n      \"field\": \"actions\",\n      \"value\": \"gave tomatoes to everyone\",\n      \"quote\": \"gave them to everyone\"\n    },\n    {\n      \"field\": \"nickname\",\n      \"value\": \"little professor\",\n      \"quote\": \"called me 'little professor'\"\n    },\n    {\n      \"field\": \"possessions\",\n      \"value\": \"books\",\n      \"quote\": \"always carried books\"\n    }\n  ],\n  \"unsure\": []\n}\n```"
+    },
+    {
+      "id": "m07",
+      "mode": "guarded",
+      "ms": 11017,
+      "details": [
+        {
+          "field": "name",
+          "value": "Tío Ernesto",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "stories",
+          "value": "Played dominoes at the plaza every evening",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "stories",
+          "value": "Never lost gracefully",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "altar_items",
+          "value": "Wore the same brown hat for years",
+          "support": 1,
+          "fabricated": false
+        }
+      ],
+      "fabricated": 0,
+      "recall": 1,
+      "questions": [
+        "How were you related to Tío Ernesto?",
+        "Do you remember the years Tío Ernesto was born and passed? It is fine to leave this blank.",
+        "What food would you put on the altar for Tío Ernesto?",
+        "Was there a song Tío Ernesto loved or sang?",
+        "Was there something Tío Ernesto always used to say?"
+      ],
+      "rejected": [],
+      "raw": "```json\n{\n  \"name\": \"Tío Ernesto\",\n  \"facts\": [\n    {\n      \"field\": \"activity\",\n      \"value\": \"Played dominoes at the plaza every evening\",\n      \"quote\": \"Tío Ernesto played dominoes at the plaza every evening\"\n    },\n    {\n      \"field\": \"manner\",\n      \"value\": \"Never lost gracefully\",\n      \"quote\": \"never lost gracefully\"\n    },\n    {\n      \"field\": \"clothing\",\n      \"value\": \"Wore the same brown hat for years\",\n      \"quote\": \"He wore the same brown hat for years\"\n    }\n  ],\n  \"unsure\": []\n}\n```"
+    },
+    {
+      "id": "m08",
+      "mode": "guarded",
+      "ms": 12430,
+      "details": [
+        {
+          "field": "name",
+          "value": "Lucía",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "relationship",
+          "value": "grandmother",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "favorite_foods",
+          "value": "pan de muerto",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "favorite_foods",
+          "value": "orange zest",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "stories",
+          "value": "crossing the river",
+          "support": 1,
+          "fabricated": false
+        }
+      ],
+      "fabricated": 0,
+      "recall": 1,
+      "questions": [
+        "Do you remember the years Lucía was born and passed? It is fine to leave this blank.",
+        "Was there a song Lucía loved or sang?",
+        "Was there something Lucía always used to say?",
+        "Is there an object that reminds you of Lucía?"
+      ],
+      "rejected": [],
+      "raw": "```json\n{\n  \"name\": \"Lucía\",\n  \"facts\": [\n    {\n      \"field\": \"relationship\",\n      \"value\": \"grandmother\",\n      \"quote\": \"My grandmother Lucía\"\n    },\n    {\n      \"field\": \"favorite_foods\",\n      \"value\": \"pan de muerto\",\n      \"quote\": \"pan de muerto with orange zest\"\n    },\n    {\n      \"field\": \"favorite_foods\",\n      \"value\": \"orange zest\",\n      \"quote\": \"orange zest\"\n    },\n    {\n      \"field\": \"stories\",\n      \"value\": \"crossing the river\",\n      \"quote\": \"crossing the river with my mother on her back\"\n    }\n  ],\n  \"unsure\": []\n}\n```"
+    },
+    {
+      "id": "m09",
+      "mode": "guarded",
+      "ms": 9354,
+      "details": [
+        {
+          "field": "name",
+          "value": "Pepita",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "relationship",
+          "value": "dog",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "stories",
+          "value": "waited by the door",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "stories",
+          "value": "stole socks",
+          "support": 1,
+          "fabricated": false
+        }
+      ],
+      "fabricated": 0,
+      "recall": 1,
+      "questions": [
+        "Do you remember the years Pepita was born and passed? It is fine to leave this blank.",
+        "What food would you put on the altar for Pepita?",
+        "Was there a song Pepita loved or sang?",
+        "Was there something Pepita always used to say?",
+        "Is there an object that reminds you of Pepita?"
+      ],
+      "rejected": [],
+      "raw": "```json\n{\n  \"name\": \"Pepita\",\n  \"facts\": [\n    {\n      \"field\": \"relationship\",\n      \"value\": \"dog\",\n      \"quote\": \"Pepita\"\n    },\n    {\n      \"field\": \"actions\",\n      \"value\": \"waited by the door\",\n      \"quote\": \"She waited by the door\"\n    },\n    {\n      \"field\": \"actions\",\n      \"value\": \"stole socks\",\n      \"quote\": \"She stole socks\"\n    }\n  ],\n  \"unsure\": []\n}\n```"
+    },
+    {
+      "id": "m10",
+      "mode": "guarded",
+      "ms": 17948,
+      "details": [
+        {
+          "field": "name",
+          "value": "Grandpa Hiro",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "relationship",
+          "value": "grandpa",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "altar_items",
+          "value": "chess board",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "altar_items",
+          "value": "missing knight",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "altar_items",
+          "value": "bottle cap",
+          "support": 1,
+          "fabricated": false
+        }
+      ],
+      "fabricated": 0,
+      "recall": 0.6666666666666666,
+      "questions": [
+        "I wasn't sure about \"teaching chess\" (stories). Did I get that right, or can you tell me in your words?",
+        "I wasn't sure about \"jazz\" (favorite foods). Did I get that right, or can you tell me in your words?",
+        "I wasn't sure about \"jazz records\" (songs). Did I get that right, or can you tell me in your words?",
+        "You weren't sure about this: \"I can’t remember\". Do you want to add it, or leave it out?",
+        "Do you remember the years Grandpa Hiro was born and passed? It is fine to leave this blank."
+      ],
+      "rejected": [
+        {
+          "field": "stories",
+          "value": "teaching chess",
+          "quote": "Grandpa Hiro taught me chess",
+          "reason": "value goes beyond the quote"
+        },
+        {
+          "field": "favorite_foods",
+          "value": "jazz",
+          "quote": "He liked jazz",
+          "reason": "the person was unsure"
+        },
+        {
+          "field": "songs",
+          "value": "jazz records",
+          "quote": "I can’t remember which records",
+          "reason": "the person was unsure"
+        }
+      ],
+      "raw": "```json\n{\n  \"name\": \"Grandpa Hiro\",\n  \"facts\": [\n    {\n      \"field\": \"relationship\",\n      \"value\": \"grandpa\",\n      \"quote\": \"Grandpa Hiro\"\n    },\n    {\n      \"field\": \"activity\",\n      \"value\": \"teaching chess\",\n      \"quote\": \"Grandpa Hiro taught me chess\"\n    },\n    {\n      \"field\": \"object\",\n      \"value\": \"chess board\",\n      \"quote\": \"on a board\"\n    },\n    {\n      \"field\": \"object\",\n      \"value\": \"missing knight\",\n      \"quote\": \"with one missing knight\"\n    },\n    {\n      \"field\": \"object\",\n      \"value\": \"bottle cap\",\n      \"quote\": \"replaced by a bottle cap\"\n    },\n    {\n      \"field\": \"favorite_foods\",\n      \"value\": \"jazz\",\n      \"quote\": \"He liked jazz\"\n    },\n    {\n      \"field\": \"songs\",\n      \"value\": \"jazz records\",\n      \"quote\": \"I can’t remember which records\"\n    }\n  ],\n  \"unsure\": [\n    \"I can’t remember\"\n  ]\n}\n```"
+    },
+    {
+      "id": "m11",
+      "mode": "guarded",
+      "ms": 16178,
+      "details": [
+        {
+          "field": "name",
+          "value": "Mamá Inés",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "stories",
+          "value": "wrote letters",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "stories",
+          "value": "green ink",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "stories",
+          "value": "marigolds",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "stories",
+          "value": "planted marigolds",
+          "support": 1,
+          "fabricated": false
+        }
+      ],
+      "fabricated": 0,
+      "recall": 1,
+      "questions": [
+        "I wasn't sure about \"loved one\" (relationship). Did I get that right, or can you tell me in your words?",
+        "How were you related to Mamá Inés?",
+        "Do you remember the years Mamá Inés was born and passed? It is fine to leave this blank.",
+        "What food would you put on the altar for Mamá Inés?",
+        "Was there a song Mamá Inés loved or sang?"
+      ],
+      "rejected": [
+        {
+          "field": "relationship",
+          "value": "loved one",
+          "quote": "",
+          "reason": "no quote"
+        }
+      ],
+      "raw": "```json\n{\n  \"name\": \"Mamá Inés\",\n  \"facts\": [\n    {\n      \"field\": \"relationship\",\n      \"value\": \"loved one\",\n      \"quote\": \"\"\n    },\n    {\n      \"field\": \"writing_style\",\n      \"value\": \"wrote letters\",\n      \"quote\": \"Mamá Inés wrote letters\"\n    },\n    {\n      \"field\": \"ink_color\",\n      \"value\": \"green ink\",\n      \"quote\": \"green ink\"\n    },\n    {\n      \"field\": \"favorite_flowers\",\n      \"value\": \"marigolds\",\n      \"quote\": \"She loved marigolds\"\n    },\n    {\n      \"field\": \"gardening_activity\",\n      \"value\": \"planted marigolds\",\n      \"quote\": \"planted them every October\"\n    }\n  ],\n  \"unsure\": []\n}\n```"
+    },
+    {
+      "id": "m12",
+      "mode": "guarded",
+      "ms": 11421,
+      "details": [
+        {
+          "field": "name",
+          "value": "Javi",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "relationship",
+          "value": "cousin",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "favorite_foods",
+          "value": "chilaquiles",
+          "support": 1,
+          "fabricated": false
+        },
+        {
+          "field": "stories",
+          "value": "fixed bikes",
+          "support": 1,
+          "fabricated": false
+        }
+      ],
+      "fabricated": 0,
+      "recall": 0.6666666666666666,
+      "questions": [
+        "I wasn't sure about \"laughed loudly\" (stories). Did I get that right, or can you tell me in your words?",
+        "Do you remember the years Javi was born and passed? It is fine to leave this blank.",
+        "Was there a song Javi loved or sang?",
+        "Was there something Javi always used to say?",
+        "Is there an object that reminds you of Javi?"
+      ],
+      "rejected": [
+        {
+          "field": "stories",
+          "value": "laughed loudly",
+          "quote": "He laughed so loud the neighbors complained",
+          "reason": "value goes beyond the quote"
+        }
+      ],
+      "raw": "```json\n{\n  \"name\": \"Javi\",\n  \"facts\": [\n    {\n      \"field\": \"relationship\",\n      \"value\": \"cousin\",\n      \"quote\": \"My cousin Javi\"\n    },\n    {\n      \"field\": \"skills\",\n      \"value\": \"fixed bikes\",\n      \"quote\": \"He fixed bikes\"\n    },\n    {\n      \"field\": \"favorite_foods\",\n      \"value\": \"chilaquiles\",\n      \"quote\": \"He made the best chilaquiles\"\n    },\n    {\n      \"field\": \"mannerisms\",\n      \"value\": \"laughed loudly\",\n      \"quote\": \"He laughed so loud the neighbors complained\"\n    }\n  ],\n  \"unsure\": []\n}\n```"
+    }
+  ]
+}
