@@ -1,6 +1,6 @@
 ---
 title: "An AI invented half the memories on an ofrenda card. Ofrenda Keeper writes down only what you said, and asks about the rest"
-published: false
+published: true
 tags: devchallenge, hf26challenge, gemma, mastra
 cover_image: https://raw.githubusercontent.com/hongpengtan0-max/ofrenda-keeper/main/docs/screenshots/02_card_after_answer.png
 ---
@@ -34,7 +34,7 @@ On an ofrenda, a made-up detail is worse than a blank line. So I built **Ofrenda
 
 ## Demo
 
-{% embed https://github.com/hongpengtan0-max/ofrenda-keeper/blob/main/docs/demo.mp4 %}
+{% youtube rnJqAOy4B-k %}
 
 ▶️ Video (about 2 min, recorded on a CPU-only box, real model latency): [docs/demo.mp4](https://github.com/hongpengtan0-max/ofrenda-keeper/blob/main/docs/demo.mp4)
 
