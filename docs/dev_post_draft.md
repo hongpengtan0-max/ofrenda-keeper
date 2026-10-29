@@ -77,7 +77,7 @@ One honest design note: Gemma 3 through Ollama doesn't do reliable native tool c
 
 ### Does the guard actually work? I measured it.
 
-I wrote 12 short **fictional** memories with a few certain details each, and hedges in some ("I don't remember what music she liked"). Each one went through both the plain prompt and Ofrenda Keeper, once each, on the same model. Then I labeled every detail by hand as grounded, embellished, invented, or generic decoration.
+I wrote 12 short **fictional** memories with a few certain details each, and hedges in some ("I don't remember what music she liked"). Each one went through both the plain prompt and Ofrenda Keeper, once each, on the same model. Then an AI coding assistant labeled every detail against the source text, using a fixed rubric in the repo: grounded, embellished, invented, or generic decoration. I reviewed every label and the underlying result files before publishing the numbers.
 
 | | Unguarded prompt | Ofrenda Keeper |
 |---|---|---|
@@ -97,7 +97,7 @@ The unguarded cards also had 110 generic decorations (candles, marigolds, "Unkno
 - **It is sometimes too strict.** "He liked jazz, but I can't remember which records" got the jazz held back entirely, because the sentence contains a hedge. That costs you one extra question, not a false memory, which is the trade-off I want here.
 - **The first version was useless.** It captured only 37.5% of key details, because Gemma invented its own field names ("activities") and my code silently dropped them. Mapping field names fixed that. Better stemming then cut over-strict rejections from 9 to 3. All three result files are in the repo.
 
-Twelve memories is a small test, and I labeled them myself. The rubric, the raw outputs, and every label are in [`eval/`](https://github.com/hongpengtan0-max/ofrenda-keeper/tree/main/eval) for anyone who wants to check my work.
+Twelve memories is a small test. The assistant applied the rubric to every detail; I reviewed those labels and am responsible for the numbers. The rubric, the raw outputs, and every label are in [`eval/`](https://github.com/hongpengtan0-max/ofrenda-keeper/tree/main/eval) for anyone who wants to check the work.
 
 ## Why Does Open Innovation Matter?
 
@@ -109,4 +109,4 @@ Twelve memories is a small test, and I labeled them myself. The rubric, the raw 
 
 ## AI assistance disclosure
 
-I built this with an AI coding assistant. It wrote most of the code, the eval scripts, the demo recording script, and the first draft of this post, and it did the hand-labeling of the eval outputs, using the rubric in the repo. I directed the project, reviewed the outputs, and am responsible for what's here. All test memories are fictional, and no real person's story was used.
+I built this with an AI coding assistant. It wrote most of the code, the eval scripts, the demo recording script, and the first draft of this post. It also applied the eval rubric in the repo to label every unguarded and guarded detail against the source text (277 unguarded details; 61 guarded details plus verifier rejections). I directed the project, reviewed every label and the result files against that rubric, and am responsible for what is published here. All test memories are fictional, and no real person's story was used.

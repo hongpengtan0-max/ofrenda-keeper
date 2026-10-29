@@ -21,7 +21,7 @@ If you ask an LLM to "make an ofrenda card for my grandmother", it will happily 
 
 Note: Gemma 3 through Ollama has no reliable native tool calling. The Mastra tools are therefore executed by workflow steps, not chosen by the model. The guard lives in code, not in a prompt the model can ignore.
 
-## Results (12 fictional memories, hand-labeled)
+## Results (12 fictional memories, rubric-labeled; see eval/REPORT.md)
 | | Unguarded | Ofrenda Keeper |
 |---|---|---|
 | Invented claims about the person | 83 / 167 (49.7%) | 0 / 61 |

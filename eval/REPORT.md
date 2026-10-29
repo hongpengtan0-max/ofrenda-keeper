@@ -21,7 +21,7 @@ Model: `gemma3:4b` (Q4_K_M GGUF, run in Ollama on CPU). Temperature 0.2. One run
 How the labels were made:
 - Unguarded: every one of the 277 details was hand-labeled as Grounded / Embellished / Invented / Decoration. The labels are in `naive_labels.json`, indexed into `results_v1.json`.
 - Guarded: all 61 details and all 7 verifier rejections were hand-audited. The audit is in `guarded_labels.json`.
-- The labeling was done by the AI coding assistant that built the project, reading each detail against the source text. The rubric is in the files; spot-checks are welcome.
+- The labeling was done by the AI coding assistant that built the project, reading each detail against the source text. The author reviewed every label and the result files against that rubric before publishing the numbers. The rubric is in the files; further spot-checks are welcome.
 - The automatic check in `run.js` (does a detail's content words appear in the memory?) is **not** used for the headline numbers. It is part of the guard itself, so using it to score the guard would be circular.
 
 What the guard got wrong:
